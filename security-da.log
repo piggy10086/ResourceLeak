@@ -1,0 +1,4 @@
+/home/xuwenchu/Documents/cov-analysis-linux64-2019.03/bin/cov-security-da --dir /home/xuwenchu/Documents/ResourceLeak 
+cov-security-da version 2019.03 on Linux 4.15.0-128-generic x86_64
+Internal version numbers: 2c0f9c8cf4 p-pacific1-push-35439.872
+

@@ -1,0 +1,5 @@
+/home/xuwenchu/Documents/ResourceLeak/build/CMakeFiles/rebuild_cache.dir
+/home/xuwenchu/Documents/ResourceLeak/build/CMakeFiles/edit_cache.dir
+/home/xuwenchu/Documents/ResourceLeak/build/test/CMakeFiles/rebuild_cache.dir
+/home/xuwenchu/Documents/ResourceLeak/build/test/CMakeFiles/test.dir
+/home/xuwenchu/Documents/ResourceLeak/build/test/CMakeFiles/edit_cache.dir

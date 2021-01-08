@@ -1,0 +1,1427 @@
+2021-01-08T10:44:11.103189Z|cov-build|8397|info|> cov-build 2019.03 (build 2c0f9c8cf4 p-pacific1-push-35439.872)
+2021-01-08T10:44:11.103210Z|cov-build|8397|info|> Coverity Build Capture (64-bit) version 2019.03 on Linux 4.15.0-128-generic x86_64
+2021-01-08T10:44:11.103210Z|cov-build|8397|info|> Internal version numbers: 2c0f9c8cf4 p-pacific1-push-35439.872
+2021-01-08T10:44:11.103210Z|cov-build|8397|info|> 
+2021-01-08T10:44:11.103221Z|cov-build|8397|info|> Dumping from hostname : xuwenchu-ThinkPad-X1-Carbon-7th
+2021-01-08T10:44:11.103221Z|cov-build|8397|info|> 
+2021-01-08T10:44:11.103225Z|cov-build|8397|info|> Platform info:
+2021-01-08T10:44:11.103225Z|cov-build|8397|info|> Sysname = Linux
+2021-01-08T10:44:11.103225Z|cov-build|8397|info|> Release = 4.15.0-128-generic
+2021-01-08T10:44:11.103225Z|cov-build|8397|info|> Machine = x86_64
+2021-01-08T10:44:11.103225Z|cov-build|8397|info|> 
+2021-01-08T10:44:11.103225Z|cov-build|8397|info|> 
+2021-01-08T10:44:11.103235Z|cov-build|8397|info|> cov-build command: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/bin/cov-build --dir .. make -j 4 
+2021-01-08T10:44:11.103240Z|cov-build|8397|info|> cov-build expanded command: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/bin/cov-build --dir .. make -j 4 
+2021-01-08T10:44:11.103437Z|cov-build|8397|info|> build command: /usr/bin/make -j 4
+2021-01-08T10:44:11.103443Z|cov-build|8397|info|> thunk command: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/bin/cov-internal-thunk.sh make -j 4
+2021-01-08T10:44:11.103443Z|cov-build|8397|info|> 
+2021-01-08T10:44:11.103449Z|cov-build|8397|info|> Set UseSharedCompilation to false.
+2021-01-08T10:44:11.103457Z|cov-build|8397|info|> Set COVERITY_BIN to /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/bin
+2021-01-08T10:44:11.103469Z|cov-build|8397|info|> Set COVERITY_SITE_CC to Microsoft.AspNetCore.Mvc.Razor.ViewCompilation-x64.dll;Microsoft.AspNetCore.Mvc.Razor.ViewCompilation-x64.exe;Microsoft.AspNetCore.Mvc.Razor.ViewCompilation-x86.dll;Microsoft.AspNetCore.Mvc.Razor.ViewCompilation-x86.exe;Microsoft.AspNetCore.Mvc.Razor.ViewCompilation.dll;Microsoft.AspNetCore.Mvc.Razor.ViewCompilation.exe;apt;c++;cc;cl;clang;clang++;csc;csc.dll;csc2;devenv;dotnet;g++;g++-3;g++-4;gcc;gcc-3;gcc-4;java;javac;javaw;ld;link;msbuild;razor;scala;scalac;swiftc;vbc;vbc.dll
+2021-01-08T10:44:11.103475Z|cov-build|8397|info|> Set COVERITY_SITE_CC_CAPTURE_DESCENDANTS to dotnet
+2021-01-08T10:44:11.103481Z|cov-build|8397|info|> Set COVERITY_TEMP to /tmp/cov-xuwenchu/7eaad64a2afb7335a0290d2668b3dab2
+2021-01-08T10:44:11.103489Z|cov-build|8397|info|> Set COVERITY_COMMON_TEMP to /tmp
+2021-01-08T10:44:11.103495Z|cov-build|8397|info|> Set COVERITY_IDIR to /home/xuwenchu/Documents/ResourceLeak
+2021-01-08T10:44:11.103511Z|cov-build|8397|info|> Set COVERITY_OUTPUT to /home/xuwenchu/Documents/ResourceLeak/build-log.txt
+2021-01-08T10:44:11.103514Z|cov-build|8397|info|> Set COVERITY_LOG to /home/xuwenchu/Documents/ResourceLeak/build-log.txt
+2021-01-08T10:44:11.103523Z|cov-build|8397|info|> Set COVERITY_OUTPUT_ENCODING to UTF-8
+2021-01-08T10:44:11.103527Z|cov-build|8397|info|> Set COVERITY_SYSTEM_ENCODING to UTF-8
+2021-01-08T10:44:11.103532Z|cov-build|8397|info|> Set COVERITY_EMIT to /home/xuwenchu/Documents/ResourceLeak/emit
+2021-01-08T10:44:11.103550Z|cov-build|8397|info|> Set COVERITY_EMIT to /home/xuwenchu/Documents/ResourceLeak/emit
+2021-01-08T10:44:11.103564Z|cov-build|8397|info|> Set COVERITY_ENABLE_JAVA_PARSE_ERROR_RECOVERY to 1
+2021-01-08T10:44:11.103607Z|cov-build|8397|info|> Set COVERITY_JAVA_CONFIG to javac#TEMPLATE##java#TEMPLATE##apt#TEMPLATE##javaw#TEMPLATE###
+2021-01-08T10:44:11.103622Z|cov-build|8397|info|> Set COVERITY_IS_COMPILER to 0
+2021-01-08T10:44:11.103625Z|cov-build|8397|info|> Set COVERITY_TOP_PROCESS to 0
+2021-01-08T10:44:11.103627Z|cov-build|8397|info|> Set COVERITY_IS_COMPILER_DESCENDANT to 0
+2021-01-08T10:44:11.103630Z|cov-build|8397|info|> Set COVERITY_DISENGAGE_EXES to "qemuwrapper;qemu-aarch64;qemu-alpha;qemu-arm;qemu-armeb;qemu-cris;qemu-i386;qemu-m68k;qemu-microblaze;qemu-mips;qemu-mipsel;qemu-nios2;qemu-ppc;qemu-ppc64;qemu-ppc64abi32;qemu-sh4;qemu-sh4eb;qemu-sparc;qemu-sparc32plus;qemu-sparc64;qemu-x86_64"
+2021-01-08T10:44:11.103648Z|cov-build|8397|info|> 
+2021-01-08T10:44:11.103648Z|cov-build|8397|info|> 
+2021-01-08T10:44:11.103648Z|cov-build|8397|info|> Dumping configuration:
+2021-01-08T10:44:11.103648Z|cov-build|8397|info|> 
+2021-01-08T10:44:11.103655Z|cov-build|8397|info|> User/default configuration:
+2021-01-08T10:44:11.103655Z|cov-build|8397|info|> 
+2021-01-08T10:44:11.103659Z|cov-build|8397|info|> Configuration read from: command-line
+2021-01-08T10:44:11.103659Z|cov-build|8397|info|> Node: coverity
+2021-01-08T10:44:11.103659Z|cov-build|8397|info|>   Node: config
+2021-01-08T10:44:11.103659Z|cov-build|8397|info|>     Node: include Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/coverity_config.xml
+2021-01-08T10:44:11.103659Z|cov-build|8397|info|>   Node: config
+2021-01-08T10:44:11.103659Z|cov-build|8397|info|>     Node: prevent
+2021-01-08T10:44:11.103659Z|cov-build|8397|info|>       Node: dir Value: /home/xuwenchu/Documents/ResourceLeak
+2021-01-08T10:44:11.103659Z|cov-build|8397|info|> 
+2021-01-08T10:44:11.103672Z|cov-build|8397|info|> Configuration read from: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/coverity_config.xml
+2021-01-08T10:44:11.103672Z|cov-build|8397|info|> Node: coverity
+2021-01-08T10:44:11.103672Z|cov-build|8397|info|>   Node: cit_version Value: 1
+2021-01-08T10:44:11.103672Z|cov-build|8397|info|>   Node: config
+2021-01-08T10:44:11.103672Z|cov-build|8397|info|>     Node: include Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-gcc-config-0/coverity_config.xml
+2021-01-08T10:44:11.103672Z|cov-build|8397|info|>     Node: include Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-g++-config-0/coverity_config.xml
+2021-01-08T10:44:11.103672Z|cov-build|8397|info|>     Node: include Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-gcc-config-1/coverity_config.xml
+2021-01-08T10:44:11.103672Z|cov-build|8397|info|>     Node: include Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-gcc-config-2/coverity_config.xml
+2021-01-08T10:44:11.103672Z|cov-build|8397|info|>     Node: include Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-g++-config-1/coverity_config.xml
+2021-01-08T10:44:11.103672Z|cov-build|8397|info|>     Node: include Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-g++-config-2/coverity_config.xml
+2021-01-08T10:44:11.103672Z|cov-build|8397|info|>     Node: include Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-ld-config-0/coverity_config.xml
+2021-01-08T10:44:11.103672Z|cov-build|8397|info|>     Node: include Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-gcc-config-3/coverity_config.xml
+2021-01-08T10:44:11.103672Z|cov-build|8397|info|>     Node: include Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-g++-config-3/coverity_config.xml
+2021-01-08T10:44:11.103672Z|cov-build|8397|info|>     Node: include Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-javac-config-0/coverity_config.xml
+2021-01-08T10:44:11.103672Z|cov-build|8397|info|>     Node: include Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-java-config-0/coverity_config.xml
+2021-01-08T10:44:11.103672Z|cov-build|8397|info|>     Node: include Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-apt-config-0/coverity_config.xml
+2021-01-08T10:44:11.103672Z|cov-build|8397|info|>     Node: include Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-javaw-config-0/coverity_config.xml
+2021-01-08T10:44:11.103672Z|cov-build|8397|info|>     Node: include Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-jsp-config-0/coverity_config.xml
+2021-01-08T10:44:11.103672Z|cov-build|8397|info|>     Node: include Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-android-config-0/coverity_config.xml
+2021-01-08T10:44:11.103672Z|cov-build|8397|info|>     Node: include Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-capture-config-files-config-0/coverity_config.xml
+2021-01-08T10:44:11.103672Z|cov-build|8397|info|>     Node: include Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-msvc-config-0/coverity_config.xml
+2021-01-08T10:44:11.103672Z|cov-build|8397|info|>     Node: include Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-msvc_devenv-config-0/coverity_config.xml
+2021-01-08T10:44:11.103672Z|cov-build|8397|info|>     Node: include Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-msvc_msbuild-config-0/coverity_config.xml
+2021-01-08T10:44:11.103672Z|cov-build|8397|info|>     Node: include Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-msvc_link-config-0/coverity_config.xml
+2021-01-08T10:44:11.103672Z|cov-build|8397|info|>     Node: include Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-csc-config-0/coverity_config.xml
+2021-01-08T10:44:11.103672Z|cov-build|8397|info|>     Node: include Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-csc-config-1/coverity_config.xml
+2021-01-08T10:44:11.103672Z|cov-build|8397|info|>     Node: include Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-csc-config-2/coverity_config.xml
+2021-01-08T10:44:11.103672Z|cov-build|8397|info|>     Node: include Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-dotnet-config-0/coverity_config.xml
+2021-01-08T10:44:11.103672Z|cov-build|8397|info|>     Node: include Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-razor-config-0/coverity_config.xml
+2021-01-08T10:44:11.103672Z|cov-build|8397|info|>     Node: include Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-razor-config-1/coverity_config.xml
+2021-01-08T10:44:11.103672Z|cov-build|8397|info|>     Node: include Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-razor-config-2/coverity_config.xml
+2021-01-08T10:44:11.103672Z|cov-build|8397|info|>     Node: include Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-razor-config-3/coverity_config.xml
+2021-01-08T10:44:11.103672Z|cov-build|8397|info|>     Node: include Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-razor-config-4/coverity_config.xml
+2021-01-08T10:44:11.103672Z|cov-build|8397|info|>     Node: include Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-razor-config-5/coverity_config.xml
+2021-01-08T10:44:11.103672Z|cov-build|8397|info|>     Node: include Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-razor-config-6/coverity_config.xml
+2021-01-08T10:44:11.103672Z|cov-build|8397|info|>     Node: include Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-clangcc-config-0/coverity_config.xml
+2021-01-08T10:44:11.103672Z|cov-build|8397|info|>     Node: include Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-clangcxx-config-0/coverity_config.xml
+2021-01-08T10:44:11.103672Z|cov-build|8397|info|>     Node: include Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-javascript-config-0/coverity_config.xml
+2021-01-08T10:44:11.103672Z|cov-build|8397|info|>     Node: include Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-html-config-0/coverity_config.xml
+2021-01-08T10:44:11.103672Z|cov-build|8397|info|>     Node: include Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-typescript-config-0/coverity_config.xml
+2021-01-08T10:44:11.103672Z|cov-build|8397|info|>     Node: include Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-jsx-config-0/coverity_config.xml
+2021-01-08T10:44:11.103672Z|cov-build|8397|info|>     Node: include Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-vue-config-0/coverity_config.xml
+2021-01-08T10:44:11.103672Z|cov-build|8397|info|>     Node: include Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-scalac-config-0/coverity_config.xml
+2021-01-08T10:44:11.103672Z|cov-build|8397|info|>     Node: include Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-scala-config-0/coverity_config.xml
+2021-01-08T10:44:11.103672Z|cov-build|8397|info|>     Node: include Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-swiftc-config-0/coverity_config.xml
+2021-01-08T10:44:11.103672Z|cov-build|8397|info|>     Node: include Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-vbc-config-0/coverity_config.xml
+2021-01-08T10:44:11.103672Z|cov-build|8397|info|>     Node: include Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-vbc-config-1/coverity_config.xml
+2021-01-08T10:44:11.103672Z|cov-build|8397|info|>     Node: include Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-ruby-config-0/coverity_config.xml
+2021-01-08T10:44:11.103672Z|cov-build|8397|info|>     Node: include Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-php-config-0/coverity_config.xml
+2021-01-08T10:44:11.103672Z|cov-build|8397|info|>     Node: include Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-python-config-0/coverity_config.xml
+2021-01-08T10:44:11.103672Z|cov-build|8397|info|> 
+2021-01-08T10:44:11.103757Z|cov-build|8397|info|> Configuration read from: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-gcc-config-0/coverity_config.xml
+2021-01-08T10:44:11.103757Z|cov-build|8397|info|> Node: coverity
+2021-01-08T10:44:11.103757Z|cov-build|8397|info|>   Node: cit_version Value: 1
+2021-01-08T10:44:11.103757Z|cov-build|8397|info|>   Node: config
+2021-01-08T10:44:11.103757Z|cov-build|8397|info|>     Node: build
+2021-01-08T10:44:11.103757Z|cov-build|8397|info|>       Node: compiler
+2021-01-08T10:44:11.103757Z|cov-build|8397|info|>         Node: template_compiler Value: true
+2021-01-08T10:44:11.103757Z|cov-build|8397|info|>         Node: comp_name Value: gcc
+2021-01-08T10:44:11.103757Z|cov-build|8397|info|>         Node: comp_translator Value: gcc
+2021-01-08T10:44:11.103757Z|cov-build|8397|info|>         Node: comp_lang Value: C/C++
+2021-01-08T10:44:11.103757Z|cov-build|8397|info|>         Node: comp_generic Value: gnu
+2021-01-08T10:44:11.103757Z|cov-build|8397|info|>       Node: options
+2021-01-08T10:44:11.103757Z|cov-build|8397|info|>         Node: id Value: gcc-gcc-.*
+2021-01-08T10:44:11.103757Z|cov-build|8397|info|>         Node: opt_preinclude_file Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-gcc-config-0/../user_nodefs.h
+2021-01-08T10:44:11.103757Z|cov-build|8397|info|>         Node: begin_command_line_config
+2021-01-08T10:44:11.103757Z|cov-build|8397|info|>       Node: options
+2021-01-08T10:44:11.103757Z|cov-build|8397|info|>         Node: id Value: g++-gcc-.*
+2021-01-08T10:44:11.103757Z|cov-build|8397|info|>         Node: opt_preinclude_file Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-gcc-config-0/../user_nodefs.h
+2021-01-08T10:44:11.103757Z|cov-build|8397|info|>         Node: begin_command_line_config
+2021-01-08T10:44:11.103757Z|cov-build|8397|info|>       Node: options
+2021-01-08T10:44:11.103757Z|cov-build|8397|info|>         Node: id Value: g++cc-gcc-.*
+2021-01-08T10:44:11.103757Z|cov-build|8397|info|>         Node: opt_preinclude_file Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-gcc-config-0/../user_nodefs.h
+2021-01-08T10:44:11.103757Z|cov-build|8397|info|>         Node: begin_command_line_config
+2021-01-08T10:44:11.103757Z|cov-build|8397|info|>   Node: md5 Value: 220ab2f621b426ef21b5bff0d14bd626
+2021-01-08T10:44:11.103757Z|cov-build|8397|info|> 
+2021-01-08T10:44:11.103794Z|cov-build|8397|info|> Configuration read from: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-g++-config-0/coverity_config.xml
+2021-01-08T10:44:11.103794Z|cov-build|8397|info|> Node: coverity
+2021-01-08T10:44:11.103794Z|cov-build|8397|info|>   Node: cit_version Value: 1
+2021-01-08T10:44:11.103794Z|cov-build|8397|info|>   Node: config
+2021-01-08T10:44:11.103794Z|cov-build|8397|info|>     Node: build
+2021-01-08T10:44:11.103794Z|cov-build|8397|info|>       Node: compiler
+2021-01-08T10:44:11.103794Z|cov-build|8397|info|>         Node: template_compiler Value: true
+2021-01-08T10:44:11.103794Z|cov-build|8397|info|>         Node: comp_name Value: g++
+2021-01-08T10:44:11.103794Z|cov-build|8397|info|>         Node: comp_translator Value: g++
+2021-01-08T10:44:11.103794Z|cov-build|8397|info|>         Node: comp_lang Value: C/C++
+2021-01-08T10:44:11.103794Z|cov-build|8397|info|>         Node: comp_generic Value: gnu
+2021-01-08T10:44:11.103794Z|cov-build|8397|info|>       Node: options
+2021-01-08T10:44:11.103794Z|cov-build|8397|info|>         Node: id Value: g++-g++-.*
+2021-01-08T10:44:11.103794Z|cov-build|8397|info|>         Node: opt_preinclude_file Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-g++-config-0/../user_nodefs.h
+2021-01-08T10:44:11.103794Z|cov-build|8397|info|>         Node: begin_command_line_config
+2021-01-08T10:44:11.103794Z|cov-build|8397|info|>       Node: options
+2021-01-08T10:44:11.103794Z|cov-build|8397|info|>         Node: id Value: g++cc-g++-.*
+2021-01-08T10:44:11.103794Z|cov-build|8397|info|>         Node: opt_preinclude_file Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-g++-config-0/../user_nodefs.h
+2021-01-08T10:44:11.103794Z|cov-build|8397|info|>         Node: begin_command_line_config
+2021-01-08T10:44:11.103794Z|cov-build|8397|info|>   Node: md5 Value: d8da15d655e23f85d5c6ae35de65d439
+2021-01-08T10:44:11.103794Z|cov-build|8397|info|> 
+2021-01-08T10:44:11.103827Z|cov-build|8397|info|> Configuration read from: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-gcc-config-1/coverity_config.xml
+2021-01-08T10:44:11.103827Z|cov-build|8397|info|> Node: coverity
+2021-01-08T10:44:11.103827Z|cov-build|8397|info|>   Node: cit_version Value: 1
+2021-01-08T10:44:11.103827Z|cov-build|8397|info|>   Node: config
+2021-01-08T10:44:11.103827Z|cov-build|8397|info|>     Node: build
+2021-01-08T10:44:11.103827Z|cov-build|8397|info|>       Node: compiler
+2021-01-08T10:44:11.103827Z|cov-build|8397|info|>         Node: template_compiler Value: true
+2021-01-08T10:44:11.103827Z|cov-build|8397|info|>         Node: comp_name Value: gcc-3
+2021-01-08T10:44:11.103827Z|cov-build|8397|info|>         Node: comp_translator Value: gcc
+2021-01-08T10:44:11.103827Z|cov-build|8397|info|>         Node: comp_lang Value: C/C++
+2021-01-08T10:44:11.103827Z|cov-build|8397|info|>         Node: comp_generic Value: gnu
+2021-01-08T10:44:11.103827Z|cov-build|8397|info|>       Node: options
+2021-01-08T10:44:11.103827Z|cov-build|8397|info|>         Node: id Value: gcc-gcc-3-.*
+2021-01-08T10:44:11.103827Z|cov-build|8397|info|>         Node: opt_preinclude_file Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-gcc-config-1/../user_nodefs.h
+2021-01-08T10:44:11.103827Z|cov-build|8397|info|>         Node: begin_command_line_config
+2021-01-08T10:44:11.103827Z|cov-build|8397|info|>       Node: options
+2021-01-08T10:44:11.103827Z|cov-build|8397|info|>         Node: id Value: g++-gcc-3-.*
+2021-01-08T10:44:11.103827Z|cov-build|8397|info|>         Node: opt_preinclude_file Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-gcc-config-1/../user_nodefs.h
+2021-01-08T10:44:11.103827Z|cov-build|8397|info|>         Node: begin_command_line_config
+2021-01-08T10:44:11.103827Z|cov-build|8397|info|>       Node: options
+2021-01-08T10:44:11.103827Z|cov-build|8397|info|>         Node: id Value: g++cc-gcc-3-.*
+2021-01-08T10:44:11.103827Z|cov-build|8397|info|>         Node: opt_preinclude_file Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-gcc-config-1/../user_nodefs.h
+2021-01-08T10:44:11.103827Z|cov-build|8397|info|>         Node: begin_command_line_config
+2021-01-08T10:44:11.103827Z|cov-build|8397|info|>   Node: md5 Value: 6a6dc6f1a6c9360514c721c673fa1951
+2021-01-08T10:44:11.103827Z|cov-build|8397|info|> 
+2021-01-08T10:44:11.103865Z|cov-build|8397|info|> Configuration read from: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-gcc-config-2/coverity_config.xml
+2021-01-08T10:44:11.103865Z|cov-build|8397|info|> Node: coverity
+2021-01-08T10:44:11.103865Z|cov-build|8397|info|>   Node: cit_version Value: 1
+2021-01-08T10:44:11.103865Z|cov-build|8397|info|>   Node: config
+2021-01-08T10:44:11.103865Z|cov-build|8397|info|>     Node: build
+2021-01-08T10:44:11.103865Z|cov-build|8397|info|>       Node: compiler
+2021-01-08T10:44:11.103865Z|cov-build|8397|info|>         Node: template_compiler Value: true
+2021-01-08T10:44:11.103865Z|cov-build|8397|info|>         Node: comp_name Value: gcc-4
+2021-01-08T10:44:11.103865Z|cov-build|8397|info|>         Node: comp_translator Value: gcc
+2021-01-08T10:44:11.103865Z|cov-build|8397|info|>         Node: comp_lang Value: C/C++
+2021-01-08T10:44:11.103865Z|cov-build|8397|info|>         Node: comp_generic Value: gnu
+2021-01-08T10:44:11.103865Z|cov-build|8397|info|>       Node: options
+2021-01-08T10:44:11.103865Z|cov-build|8397|info|>         Node: id Value: gcc-gcc-4-.*
+2021-01-08T10:44:11.103865Z|cov-build|8397|info|>         Node: opt_preinclude_file Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-gcc-config-2/../user_nodefs.h
+2021-01-08T10:44:11.103865Z|cov-build|8397|info|>         Node: begin_command_line_config
+2021-01-08T10:44:11.103865Z|cov-build|8397|info|>       Node: options
+2021-01-08T10:44:11.103865Z|cov-build|8397|info|>         Node: id Value: g++-gcc-4-.*
+2021-01-08T10:44:11.103865Z|cov-build|8397|info|>         Node: opt_preinclude_file Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-gcc-config-2/../user_nodefs.h
+2021-01-08T10:44:11.103865Z|cov-build|8397|info|>         Node: begin_command_line_config
+2021-01-08T10:44:11.103865Z|cov-build|8397|info|>       Node: options
+2021-01-08T10:44:11.103865Z|cov-build|8397|info|>         Node: id Value: g++cc-gcc-4-.*
+2021-01-08T10:44:11.103865Z|cov-build|8397|info|>         Node: opt_preinclude_file Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-gcc-config-2/../user_nodefs.h
+2021-01-08T10:44:11.103865Z|cov-build|8397|info|>         Node: begin_command_line_config
+2021-01-08T10:44:11.103865Z|cov-build|8397|info|>   Node: md5 Value: 6f1a220d892e908cc9817e94bdeb7bc5
+2021-01-08T10:44:11.103865Z|cov-build|8397|info|> 
+2021-01-08T10:44:11.103902Z|cov-build|8397|info|> Configuration read from: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-g++-config-1/coverity_config.xml
+2021-01-08T10:44:11.103902Z|cov-build|8397|info|> Node: coverity
+2021-01-08T10:44:11.103902Z|cov-build|8397|info|>   Node: cit_version Value: 1
+2021-01-08T10:44:11.103902Z|cov-build|8397|info|>   Node: config
+2021-01-08T10:44:11.103902Z|cov-build|8397|info|>     Node: build
+2021-01-08T10:44:11.103902Z|cov-build|8397|info|>       Node: compiler
+2021-01-08T10:44:11.103902Z|cov-build|8397|info|>         Node: template_compiler Value: true
+2021-01-08T10:44:11.103902Z|cov-build|8397|info|>         Node: comp_name Value: g++-3
+2021-01-08T10:44:11.103902Z|cov-build|8397|info|>         Node: comp_translator Value: g++
+2021-01-08T10:44:11.103902Z|cov-build|8397|info|>         Node: comp_lang Value: C/C++
+2021-01-08T10:44:11.103902Z|cov-build|8397|info|>         Node: comp_generic Value: gnu
+2021-01-08T10:44:11.103902Z|cov-build|8397|info|>       Node: options
+2021-01-08T10:44:11.103902Z|cov-build|8397|info|>         Node: id Value: g++-g++-3-.*
+2021-01-08T10:44:11.103902Z|cov-build|8397|info|>         Node: opt_preinclude_file Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-g++-config-1/../user_nodefs.h
+2021-01-08T10:44:11.103902Z|cov-build|8397|info|>         Node: begin_command_line_config
+2021-01-08T10:44:11.103902Z|cov-build|8397|info|>       Node: options
+2021-01-08T10:44:11.103902Z|cov-build|8397|info|>         Node: id Value: g++cc-g++-3-.*
+2021-01-08T10:44:11.103902Z|cov-build|8397|info|>         Node: opt_preinclude_file Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-g++-config-1/../user_nodefs.h
+2021-01-08T10:44:11.103902Z|cov-build|8397|info|>         Node: begin_command_line_config
+2021-01-08T10:44:11.103902Z|cov-build|8397|info|>   Node: md5 Value: ada4013796c1b19ed1fe7ebb4197cd2d
+2021-01-08T10:44:11.103902Z|cov-build|8397|info|> 
+2021-01-08T10:44:11.103934Z|cov-build|8397|info|> Configuration read from: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-g++-config-2/coverity_config.xml
+2021-01-08T10:44:11.103934Z|cov-build|8397|info|> Node: coverity
+2021-01-08T10:44:11.103934Z|cov-build|8397|info|>   Node: cit_version Value: 1
+2021-01-08T10:44:11.103934Z|cov-build|8397|info|>   Node: config
+2021-01-08T10:44:11.103934Z|cov-build|8397|info|>     Node: build
+2021-01-08T10:44:11.103934Z|cov-build|8397|info|>       Node: compiler
+2021-01-08T10:44:11.103934Z|cov-build|8397|info|>         Node: template_compiler Value: true
+2021-01-08T10:44:11.103934Z|cov-build|8397|info|>         Node: comp_name Value: g++-4
+2021-01-08T10:44:11.103934Z|cov-build|8397|info|>         Node: comp_translator Value: g++
+2021-01-08T10:44:11.103934Z|cov-build|8397|info|>         Node: comp_lang Value: C/C++
+2021-01-08T10:44:11.103934Z|cov-build|8397|info|>         Node: comp_generic Value: gnu
+2021-01-08T10:44:11.103934Z|cov-build|8397|info|>       Node: options
+2021-01-08T10:44:11.103934Z|cov-build|8397|info|>         Node: id Value: g++-g++-4-.*
+2021-01-08T10:44:11.103934Z|cov-build|8397|info|>         Node: opt_preinclude_file Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-g++-config-2/../user_nodefs.h
+2021-01-08T10:44:11.103934Z|cov-build|8397|info|>         Node: begin_command_line_config
+2021-01-08T10:44:11.103934Z|cov-build|8397|info|>       Node: options
+2021-01-08T10:44:11.103934Z|cov-build|8397|info|>         Node: id Value: g++cc-g++-4-.*
+2021-01-08T10:44:11.103934Z|cov-build|8397|info|>         Node: opt_preinclude_file Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-g++-config-2/../user_nodefs.h
+2021-01-08T10:44:11.103934Z|cov-build|8397|info|>         Node: begin_command_line_config
+2021-01-08T10:44:11.103934Z|cov-build|8397|info|>   Node: md5 Value: deb1268a1fd912fa66d290aac3a8d6e1
+2021-01-08T10:44:11.103934Z|cov-build|8397|info|> 
+2021-01-08T10:44:11.103965Z|cov-build|8397|info|> Configuration read from: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-ld-config-0/coverity_config.xml
+2021-01-08T10:44:11.103965Z|cov-build|8397|info|> Node: coverity
+2021-01-08T10:44:11.103965Z|cov-build|8397|info|>   Node: cit_version Value: 1
+2021-01-08T10:44:11.103965Z|cov-build|8397|info|>   Node: config
+2021-01-08T10:44:11.103965Z|cov-build|8397|info|>     Node: build
+2021-01-08T10:44:11.103965Z|cov-build|8397|info|>       Node: compiler
+2021-01-08T10:44:11.103965Z|cov-build|8397|info|>         Node: template_compiler Value: true
+2021-01-08T10:44:11.103965Z|cov-build|8397|info|>         Node: comp_name Value: ld
+2021-01-08T10:44:11.103965Z|cov-build|8397|info|>         Node: comp_translator Value: ld
+2021-01-08T10:44:11.103965Z|cov-build|8397|info|>         Node: comp_lang Value: C/C++
+2021-01-08T10:44:11.103965Z|cov-build|8397|info|>         Node: comp_generic Value: gnu
+2021-01-08T10:44:11.103965Z|cov-build|8397|info|>       Node: options
+2021-01-08T10:44:11.103965Z|cov-build|8397|info|>         Node: id Value: ld-ld-.*
+2021-01-08T10:44:11.103965Z|cov-build|8397|info|>         Node: opt_preinclude_file Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-ld-config-0/../user_nodefs.h
+2021-01-08T10:44:11.103965Z|cov-build|8397|info|>         Node: begin_command_line_config
+2021-01-08T10:44:11.103965Z|cov-build|8397|info|>   Node: md5 Value: a31ebdf549aecdabc7c15e5c23be5e63
+2021-01-08T10:44:11.103965Z|cov-build|8397|info|> 
+2021-01-08T10:44:11.103992Z|cov-build|8397|info|> Configuration read from: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-gcc-config-3/coverity_config.xml
+2021-01-08T10:44:11.103992Z|cov-build|8397|info|> Node: coverity
+2021-01-08T10:44:11.103992Z|cov-build|8397|info|>   Node: cit_version Value: 1
+2021-01-08T10:44:11.103992Z|cov-build|8397|info|>   Node: config
+2021-01-08T10:44:11.103992Z|cov-build|8397|info|>     Node: build
+2021-01-08T10:44:11.103992Z|cov-build|8397|info|>       Node: compiler
+2021-01-08T10:44:11.103992Z|cov-build|8397|info|>         Node: template_compiler Value: true
+2021-01-08T10:44:11.103992Z|cov-build|8397|info|>         Node: comp_name Value: cc
+2021-01-08T10:44:11.103992Z|cov-build|8397|info|>         Node: comp_translator Value: gcc
+2021-01-08T10:44:11.103992Z|cov-build|8397|info|>         Node: comp_lang Value: C/C++
+2021-01-08T10:44:11.103992Z|cov-build|8397|info|>         Node: comp_generic Value: gnu
+2021-01-08T10:44:11.103992Z|cov-build|8397|info|>       Node: options
+2021-01-08T10:44:11.103992Z|cov-build|8397|info|>         Node: id Value: gcc-cc-.*
+2021-01-08T10:44:11.103992Z|cov-build|8397|info|>         Node: opt_preinclude_file Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-gcc-config-3/../user_nodefs.h
+2021-01-08T10:44:11.103992Z|cov-build|8397|info|>         Node: begin_command_line_config
+2021-01-08T10:44:11.103992Z|cov-build|8397|info|>       Node: options
+2021-01-08T10:44:11.103992Z|cov-build|8397|info|>         Node: id Value: g++-cc-.*
+2021-01-08T10:44:11.103992Z|cov-build|8397|info|>         Node: opt_preinclude_file Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-gcc-config-3/../user_nodefs.h
+2021-01-08T10:44:11.103992Z|cov-build|8397|info|>         Node: begin_command_line_config
+2021-01-08T10:44:11.103992Z|cov-build|8397|info|>       Node: options
+2021-01-08T10:44:11.103992Z|cov-build|8397|info|>         Node: id Value: g++cc-cc-.*
+2021-01-08T10:44:11.103992Z|cov-build|8397|info|>         Node: opt_preinclude_file Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-gcc-config-3/../user_nodefs.h
+2021-01-08T10:44:11.103992Z|cov-build|8397|info|>         Node: begin_command_line_config
+2021-01-08T10:44:11.103992Z|cov-build|8397|info|>   Node: md5 Value: 5ab1d465abf1e699248ecdb7fe5931c0
+2021-01-08T10:44:11.103992Z|cov-build|8397|info|> 
+2021-01-08T10:44:11.104029Z|cov-build|8397|info|> Configuration read from: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-g++-config-3/coverity_config.xml
+2021-01-08T10:44:11.104029Z|cov-build|8397|info|> Node: coverity
+2021-01-08T10:44:11.104029Z|cov-build|8397|info|>   Node: cit_version Value: 1
+2021-01-08T10:44:11.104029Z|cov-build|8397|info|>   Node: config
+2021-01-08T10:44:11.104029Z|cov-build|8397|info|>     Node: build
+2021-01-08T10:44:11.104029Z|cov-build|8397|info|>       Node: compiler
+2021-01-08T10:44:11.104029Z|cov-build|8397|info|>         Node: template_compiler Value: true
+2021-01-08T10:44:11.104029Z|cov-build|8397|info|>         Node: comp_name Value: c++
+2021-01-08T10:44:11.104029Z|cov-build|8397|info|>         Node: comp_translator Value: g++
+2021-01-08T10:44:11.104029Z|cov-build|8397|info|>         Node: comp_lang Value: C/C++
+2021-01-08T10:44:11.104029Z|cov-build|8397|info|>         Node: comp_generic Value: gnu
+2021-01-08T10:44:11.104029Z|cov-build|8397|info|>       Node: options
+2021-01-08T10:44:11.104029Z|cov-build|8397|info|>         Node: id Value: g++-c++-.*
+2021-01-08T10:44:11.104029Z|cov-build|8397|info|>         Node: opt_preinclude_file Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-g++-config-3/../user_nodefs.h
+2021-01-08T10:44:11.104029Z|cov-build|8397|info|>         Node: begin_command_line_config
+2021-01-08T10:44:11.104029Z|cov-build|8397|info|>       Node: options
+2021-01-08T10:44:11.104029Z|cov-build|8397|info|>         Node: id Value: g++cc-c++-.*
+2021-01-08T10:44:11.104029Z|cov-build|8397|info|>         Node: opt_preinclude_file Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-g++-config-3/../user_nodefs.h
+2021-01-08T10:44:11.104029Z|cov-build|8397|info|>         Node: begin_command_line_config
+2021-01-08T10:44:11.104029Z|cov-build|8397|info|>   Node: md5 Value: 92107d6a420ac9dd06caaaf4fa667276
+2021-01-08T10:44:11.104029Z|cov-build|8397|info|> 
+2021-01-08T10:44:11.104061Z|cov-build|8397|info|> Configuration read from: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-javac-config-0/coverity_config.xml
+2021-01-08T10:44:11.104061Z|cov-build|8397|info|> Node: coverity
+2021-01-08T10:44:11.104061Z|cov-build|8397|info|>   Node: cit_version Value: 1
+2021-01-08T10:44:11.104061Z|cov-build|8397|info|>   Node: config
+2021-01-08T10:44:11.104061Z|cov-build|8397|info|>     Node: build
+2021-01-08T10:44:11.104061Z|cov-build|8397|info|>       Node: compiler
+2021-01-08T10:44:11.104061Z|cov-build|8397|info|>         Node: template_compiler Value: true
+2021-01-08T10:44:11.104061Z|cov-build|8397|info|>         Node: comp_name Value: javac
+2021-01-08T10:44:11.104061Z|cov-build|8397|info|>         Node: comp_translator Value: javac
+2021-01-08T10:44:11.104061Z|cov-build|8397|info|>         Node: comp_lang Value: Static Java
+2021-01-08T10:44:11.104061Z|cov-build|8397|info|>         Node: comp_generic Value: java
+2021-01-08T10:44:11.104061Z|cov-build|8397|info|>       Node: options
+2021-01-08T10:44:11.104061Z|cov-build|8397|info|>         Node: id Value: javac-javac-.*
+2021-01-08T10:44:11.104061Z|cov-build|8397|info|>         Node: begin_command_line_config
+2021-01-08T10:44:11.104061Z|cov-build|8397|info|>   Node: md5 Value: 4dff82855a5f75486f23dc3987a065c8
+2021-01-08T10:44:11.104061Z|cov-build|8397|info|> 
+2021-01-08T10:44:11.104085Z|cov-build|8397|info|> Configuration read from: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-java-config-0/coverity_config.xml
+2021-01-08T10:44:11.104085Z|cov-build|8397|info|> Node: coverity
+2021-01-08T10:44:11.104085Z|cov-build|8397|info|>   Node: cit_version Value: 1
+2021-01-08T10:44:11.104085Z|cov-build|8397|info|>   Node: config
+2021-01-08T10:44:11.104085Z|cov-build|8397|info|>     Node: build
+2021-01-08T10:44:11.104085Z|cov-build|8397|info|>       Node: compiler
+2021-01-08T10:44:11.104085Z|cov-build|8397|info|>         Node: template_compiler Value: true
+2021-01-08T10:44:11.104085Z|cov-build|8397|info|>         Node: comp_name Value: java
+2021-01-08T10:44:11.104085Z|cov-build|8397|info|>         Node: comp_translator Value: java
+2021-01-08T10:44:11.104085Z|cov-build|8397|info|>         Node: comp_lang Value: Static Java
+2021-01-08T10:44:11.104085Z|cov-build|8397|info|>         Node: comp_generic Value: java
+2021-01-08T10:44:11.104085Z|cov-build|8397|info|>       Node: options
+2021-01-08T10:44:11.104085Z|cov-build|8397|info|>         Node: id Value: java-java-.*
+2021-01-08T10:44:11.104085Z|cov-build|8397|info|>         Node: begin_command_line_config
+2021-01-08T10:44:11.104085Z|cov-build|8397|info|>   Node: md5 Value: 670e0eff61ca6e268d4c53f998738922
+2021-01-08T10:44:11.104085Z|cov-build|8397|info|> 
+2021-01-08T10:44:11.104108Z|cov-build|8397|info|> Configuration read from: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-apt-config-0/coverity_config.xml
+2021-01-08T10:44:11.104108Z|cov-build|8397|info|> Node: coverity
+2021-01-08T10:44:11.104108Z|cov-build|8397|info|>   Node: cit_version Value: 1
+2021-01-08T10:44:11.104108Z|cov-build|8397|info|>   Node: config
+2021-01-08T10:44:11.104108Z|cov-build|8397|info|>     Node: build
+2021-01-08T10:44:11.104108Z|cov-build|8397|info|>       Node: compiler
+2021-01-08T10:44:11.104108Z|cov-build|8397|info|>         Node: template_compiler Value: true
+2021-01-08T10:44:11.104108Z|cov-build|8397|info|>         Node: comp_name Value: apt
+2021-01-08T10:44:11.104108Z|cov-build|8397|info|>         Node: comp_translator Value: apt
+2021-01-08T10:44:11.104108Z|cov-build|8397|info|>         Node: comp_lang Value: Static Java
+2021-01-08T10:44:11.104108Z|cov-build|8397|info|>         Node: comp_generic Value: java
+2021-01-08T10:44:11.104108Z|cov-build|8397|info|>       Node: options
+2021-01-08T10:44:11.104108Z|cov-build|8397|info|>         Node: id Value: apt-apt-.*
+2021-01-08T10:44:11.104108Z|cov-build|8397|info|>         Node: begin_command_line_config
+2021-01-08T10:44:11.104108Z|cov-build|8397|info|>   Node: md5 Value: 0c3c17692884987df5fe47566993553e
+2021-01-08T10:44:11.104108Z|cov-build|8397|info|> 
+2021-01-08T10:44:11.104133Z|cov-build|8397|info|> Configuration read from: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-javaw-config-0/coverity_config.xml
+2021-01-08T10:44:11.104133Z|cov-build|8397|info|> Node: coverity
+2021-01-08T10:44:11.104133Z|cov-build|8397|info|>   Node: cit_version Value: 1
+2021-01-08T10:44:11.104133Z|cov-build|8397|info|>   Node: config
+2021-01-08T10:44:11.104133Z|cov-build|8397|info|>     Node: build
+2021-01-08T10:44:11.104133Z|cov-build|8397|info|>       Node: compiler
+2021-01-08T10:44:11.104133Z|cov-build|8397|info|>         Node: template_compiler Value: true
+2021-01-08T10:44:11.104133Z|cov-build|8397|info|>         Node: comp_name Value: javaw
+2021-01-08T10:44:11.104133Z|cov-build|8397|info|>         Node: comp_translator Value: javaw
+2021-01-08T10:44:11.104133Z|cov-build|8397|info|>         Node: comp_lang Value: Static Java
+2021-01-08T10:44:11.104133Z|cov-build|8397|info|>         Node: comp_generic Value: java
+2021-01-08T10:44:11.104133Z|cov-build|8397|info|>       Node: options
+2021-01-08T10:44:11.104133Z|cov-build|8397|info|>         Node: id Value: javaw-javaw-.*
+2021-01-08T10:44:11.104133Z|cov-build|8397|info|>         Node: begin_command_line_config
+2021-01-08T10:44:11.104133Z|cov-build|8397|info|>   Node: md5 Value: aa3bf49b5164470df847ce74b96aa069
+2021-01-08T10:44:11.104133Z|cov-build|8397|info|> 
+2021-01-08T10:44:11.104156Z|cov-build|8397|info|> Configuration read from: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-jsp-config-0/coverity_config.xml
+2021-01-08T10:44:11.104156Z|cov-build|8397|info|> Node: coverity
+2021-01-08T10:44:11.104156Z|cov-build|8397|info|>   Node: cit_version Value: 1
+2021-01-08T10:44:11.104156Z|cov-build|8397|info|>   Node: config
+2021-01-08T10:44:11.104156Z|cov-build|8397|info|>     Node: build
+2021-01-08T10:44:11.104156Z|cov-build|8397|info|>       Node: compiler
+2021-01-08T10:44:11.104156Z|cov-build|8397|info|>         Node: template_compiler Value: true
+2021-01-08T10:44:11.104156Z|cov-build|8397|info|>         Node: comp_name Value: cov-filesystem-capture-jsp-0
+2021-01-08T10:44:11.104156Z|cov-build|8397|info|>         Node: comp_translator Value: jsp
+2021-01-08T10:44:11.104156Z|cov-build|8397|info|>         Node: comp_lang Value: Non Compiled
+2021-01-08T10:44:11.104156Z|cov-build|8397|info|>         Node: comp_generic Value: java
+2021-01-08T10:44:11.104156Z|cov-build|8397|info|>         Node: file_include_pattern Value: ^.*\.(jsp|jspx)$
+2021-01-08T10:44:11.104156Z|cov-build|8397|info|>       Node: options
+2021-01-08T10:44:11.104156Z|cov-build|8397|info|>         Node: id Value: jsp-cov-filesystem-capture-jsp-0-.*
+2021-01-08T10:44:11.104156Z|cov-build|8397|info|>         Node: begin_command_line_config
+2021-01-08T10:44:11.104156Z|cov-build|8397|info|>   Node: md5 Value: 425f5b1409471a4a55890e518ffea917
+2021-01-08T10:44:11.104156Z|cov-build|8397|info|> 
+2021-01-08T10:44:11.104182Z|cov-build|8397|info|> Configuration read from: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-android-config-0/coverity_config.xml
+2021-01-08T10:44:11.104182Z|cov-build|8397|info|> Node: coverity
+2021-01-08T10:44:11.104182Z|cov-build|8397|info|>   Node: cit_version Value: 1
+2021-01-08T10:44:11.104182Z|cov-build|8397|info|>   Node: config
+2021-01-08T10:44:11.104182Z|cov-build|8397|info|>     Node: build
+2021-01-08T10:44:11.104182Z|cov-build|8397|info|>       Node: compiler
+2021-01-08T10:44:11.104182Z|cov-build|8397|info|>         Node: template_compiler Value: true
+2021-01-08T10:44:11.104182Z|cov-build|8397|info|>         Node: comp_name Value: cov-filesystem-capture-android-0
+2021-01-08T10:44:11.104182Z|cov-build|8397|info|>         Node: comp_translator Value: android
+2021-01-08T10:44:11.104182Z|cov-build|8397|info|>         Node: comp_lang Value: Non Compiled
+2021-01-08T10:44:11.104182Z|cov-build|8397|info|>         Node: comp_generic Value: java
+2021-01-08T10:44:11.104182Z|cov-build|8397|info|>         Node: file_include_pattern Value: ^.*(layout.*[/\\].*\.xml|AndroidManifest\.xml)$
+2021-01-08T10:44:11.104182Z|cov-build|8397|info|>       Node: options
+2021-01-08T10:44:11.104182Z|cov-build|8397|info|>         Node: id Value: android-cov-filesystem-capture-android-0-.*
+2021-01-08T10:44:11.104182Z|cov-build|8397|info|>         Node: begin_command_line_config
+2021-01-08T10:44:11.104182Z|cov-build|8397|info|>   Node: md5 Value: 2038ccdce64ccbc0d91a6d98e3ada876
+2021-01-08T10:44:11.104182Z|cov-build|8397|info|> 
+2021-01-08T10:44:11.104209Z|cov-build|8397|info|> Configuration read from: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-capture-config-files-config-0/coverity_config.xml
+2021-01-08T10:44:11.104209Z|cov-build|8397|info|> Node: coverity
+2021-01-08T10:44:11.104209Z|cov-build|8397|info|>   Node: cit_version Value: 1
+2021-01-08T10:44:11.104209Z|cov-build|8397|info|>   Node: config
+2021-01-08T10:44:11.104209Z|cov-build|8397|info|>     Node: build
+2021-01-08T10:44:11.104209Z|cov-build|8397|info|>       Node: compiler
+2021-01-08T10:44:11.104209Z|cov-build|8397|info|>         Node: template_compiler Value: true
+2021-01-08T10:44:11.104209Z|cov-build|8397|info|>         Node: comp_name Value: cov-filesystem-capture-capture-config-files-0
+2021-01-08T10:44:11.104209Z|cov-build|8397|info|>         Node: comp_translator Value: capture-config-files
+2021-01-08T10:44:11.104209Z|cov-build|8397|info|>         Node: comp_lang Value: Non Compiled
+2021-01-08T10:44:11.104209Z|cov-build|8397|info|>         Node: comp_generic Value: capture_config_files
+2021-01-08T10:44:11.104209Z|cov-build|8397|info|>         Node: file_include_pattern Value: $capture-config-files$
+2021-01-08T10:44:11.104209Z|cov-build|8397|info|>       Node: options
+2021-01-08T10:44:11.104209Z|cov-build|8397|info|>         Node: id Value: capture-config-files-cov-filesystem-capture-capture-config-files-0-.*
+2021-01-08T10:44:11.104209Z|cov-build|8397|info|>         Node: begin_command_line_config
+2021-01-08T10:44:11.104209Z|cov-build|8397|info|>   Node: md5 Value: b94e617f98adb465b84e44c2bb1187e2
+2021-01-08T10:44:11.104209Z|cov-build|8397|info|> 
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|> Configuration read from: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-msvc-config-0/coverity_config.xml
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|> Node: coverity
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>   Node: cit_version Value: 1
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>   Node: config
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>     Node: build
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>       Node: compiler
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>         Node: template_compiler Value: true
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>         Node: comp_name Value: cl
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>         Node: comp_translator Value: msvc
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>         Node: comp_lang Value: C/C++
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>         Node: comp_generic Value: msvc
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>       Node: options
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>         Node: id Value: msvc-cl-.*
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>         Node: opt_preinclude_file Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-msvc-config-0/../user_nodefs.h
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>         Node: instrument_variable
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>           Node: var_name Value: cov_instrument_config_version
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>           Node: cond_platform_value
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>             Node: platform_name Value: all
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>             Node: var_value Value: 3
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>         Node: instrument_variable
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>           Node: var_name Value: cov_lib_deployment_path
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>           Node: cond_platform_value
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>             Node: platform_name Value: all
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>             Node: var_value Value: /data00/hudson_home/workspace/Admin_Tools/upload/build/cov-analysis-linux64-2019.03/lib
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>         Node: instrument_variable
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>           Node: var_name Value: cov_lib_header_path
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>           Node: cond_platform_value
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>             Node: platform_name Value: all
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>             Node: var_value Value: /data00/hudson_home/workspace/Admin_Tools/upload/build/cov-analysis-linux64-2019.03/sdk/runtime/ta-runtime
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>         Node: instrument_variable
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>           Node: var_name Value: cov_lib_name
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>           Node: cond_platform_value
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>             Node: platform_name Value: x64
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>             Node: var_value Value: libci-runtime-x64.lib
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>           Node: cond_platform_value
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>             Node: platform_name Value: x86
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>             Node: var_value Value: libci-runtime-x86.lib
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>         Node: instrument_variable
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>           Node: var_name Value: cov_lib_path
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>           Node: cond_platform_value
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>             Node: platform_name Value: all
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>             Node: var_value Value: /data00/hudson_home/workspace/Admin_Tools/upload/build/cov-analysis-linux64-2019.03/lib
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>         Node: begin_command_line_config
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>       Node: options
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>         Node: id Value: msvc_cxx-cl-.*
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>         Node: opt_preinclude_file Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-msvc-config-0/../user_nodefs.h
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>         Node: instrument_variable
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>           Node: var_name Value: cov_instrument_config_version
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>           Node: cond_platform_value
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>             Node: platform_name Value: all
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>             Node: var_value Value: 3
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>         Node: instrument_variable
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>           Node: var_name Value: cov_lib_deployment_path
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>           Node: cond_platform_value
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>             Node: platform_name Value: all
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>             Node: var_value Value: /data00/hudson_home/workspace/Admin_Tools/upload/build/cov-analysis-linux64-2019.03/lib
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>         Node: instrument_variable
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>           Node: var_name Value: cov_lib_header_path
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>           Node: cond_platform_value
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>             Node: platform_name Value: all
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>             Node: var_value Value: /data00/hudson_home/workspace/Admin_Tools/upload/build/cov-analysis-linux64-2019.03/sdk/runtime/ta-runtime
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>         Node: instrument_variable
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>           Node: var_name Value: cov_lib_name
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>           Node: cond_platform_value
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>             Node: platform_name Value: x64
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>             Node: var_value Value: libci-runtime-x64.lib
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>           Node: cond_platform_value
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>             Node: platform_name Value: x86
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>             Node: var_value Value: libci-runtime-x86.lib
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>         Node: instrument_variable
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>           Node: var_name Value: cov_lib_path
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>           Node: cond_platform_value
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>             Node: platform_name Value: all
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>             Node: var_value Value: /data00/hudson_home/workspace/Admin_Tools/upload/build/cov-analysis-linux64-2019.03/lib
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>         Node: begin_command_line_config
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|>   Node: md5 Value: fd182cd4a7d005d49b4d6f27c2349ce8
+2021-01-08T10:44:11.104236Z|cov-build|8397|info|> 
+2021-01-08T10:44:11.104354Z|cov-build|8397|info|> Configuration read from: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-msvc_devenv-config-0/coverity_config.xml
+2021-01-08T10:44:11.104354Z|cov-build|8397|info|> Node: coverity
+2021-01-08T10:44:11.104354Z|cov-build|8397|info|>   Node: cit_version Value: 1
+2021-01-08T10:44:11.104354Z|cov-build|8397|info|>   Node: config
+2021-01-08T10:44:11.104354Z|cov-build|8397|info|>     Node: build
+2021-01-08T10:44:11.104354Z|cov-build|8397|info|>       Node: compiler
+2021-01-08T10:44:11.104354Z|cov-build|8397|info|>         Node: template_compiler Value: true
+2021-01-08T10:44:11.104354Z|cov-build|8397|info|>         Node: comp_name Value: devenv
+2021-01-08T10:44:11.104354Z|cov-build|8397|info|>         Node: comp_translator Value: msvc_devenv
+2021-01-08T10:44:11.104354Z|cov-build|8397|info|>         Node: comp_lang Value: C/C++
+2021-01-08T10:44:11.104354Z|cov-build|8397|info|>         Node: comp_generic Value: msvc
+2021-01-08T10:44:11.104354Z|cov-build|8397|info|>       Node: options
+2021-01-08T10:44:11.104354Z|cov-build|8397|info|>         Node: id Value: msvc_devenv-devenv-.*
+2021-01-08T10:44:11.104354Z|cov-build|8397|info|>         Node: opt_preinclude_file Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-msvc_devenv-config-0/../user_nodefs.h
+2021-01-08T10:44:11.104354Z|cov-build|8397|info|>         Node: begin_command_line_config
+2021-01-08T10:44:11.104354Z|cov-build|8397|info|>   Node: md5 Value: 1bd6116a591fe1eeb03a04d0299f415d
+2021-01-08T10:44:11.104354Z|cov-build|8397|info|> 
+2021-01-08T10:44:11.104379Z|cov-build|8397|info|> Configuration read from: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-msvc_msbuild-config-0/coverity_config.xml
+2021-01-08T10:44:11.104379Z|cov-build|8397|info|> Node: coverity
+2021-01-08T10:44:11.104379Z|cov-build|8397|info|>   Node: cit_version Value: 1
+2021-01-08T10:44:11.104379Z|cov-build|8397|info|>   Node: config
+2021-01-08T10:44:11.104379Z|cov-build|8397|info|>     Node: build
+2021-01-08T10:44:11.104379Z|cov-build|8397|info|>       Node: compiler
+2021-01-08T10:44:11.104379Z|cov-build|8397|info|>         Node: template_compiler Value: true
+2021-01-08T10:44:11.104379Z|cov-build|8397|info|>         Node: comp_name Value: msbuild
+2021-01-08T10:44:11.104379Z|cov-build|8397|info|>         Node: comp_translator Value: msvc_msbuild
+2021-01-08T10:44:11.104379Z|cov-build|8397|info|>         Node: comp_lang Value: C/C++
+2021-01-08T10:44:11.104379Z|cov-build|8397|info|>         Node: comp_generic Value: msvc
+2021-01-08T10:44:11.104379Z|cov-build|8397|info|>       Node: options
+2021-01-08T10:44:11.104379Z|cov-build|8397|info|>         Node: id Value: msvc_msbuild-msbuild-.*
+2021-01-08T10:44:11.104379Z|cov-build|8397|info|>         Node: opt_preinclude_file Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-msvc_msbuild-config-0/../user_nodefs.h
+2021-01-08T10:44:11.104379Z|cov-build|8397|info|>         Node: begin_command_line_config
+2021-01-08T10:44:11.104379Z|cov-build|8397|info|>   Node: md5 Value: 90758a4508778ab76c418f64362bed29
+2021-01-08T10:44:11.104379Z|cov-build|8397|info|> 
+2021-01-08T10:44:11.104406Z|cov-build|8397|info|> Configuration read from: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-msvc_link-config-0/coverity_config.xml
+2021-01-08T10:44:11.104406Z|cov-build|8397|info|> Node: coverity
+2021-01-08T10:44:11.104406Z|cov-build|8397|info|>   Node: cit_version Value: 1
+2021-01-08T10:44:11.104406Z|cov-build|8397|info|>   Node: config
+2021-01-08T10:44:11.104406Z|cov-build|8397|info|>     Node: build
+2021-01-08T10:44:11.104406Z|cov-build|8397|info|>       Node: compiler
+2021-01-08T10:44:11.104406Z|cov-build|8397|info|>         Node: template_compiler Value: true
+2021-01-08T10:44:11.104406Z|cov-build|8397|info|>         Node: comp_name Value: link
+2021-01-08T10:44:11.104406Z|cov-build|8397|info|>         Node: comp_translator Value: msvc_link
+2021-01-08T10:44:11.104406Z|cov-build|8397|info|>         Node: comp_lang Value: C/C++
+2021-01-08T10:44:11.104406Z|cov-build|8397|info|>         Node: comp_generic Value: msvc
+2021-01-08T10:44:11.104406Z|cov-build|8397|info|>       Node: options
+2021-01-08T10:44:11.104406Z|cov-build|8397|info|>         Node: id Value: msvc_link-link-.*
+2021-01-08T10:44:11.104406Z|cov-build|8397|info|>         Node: opt_preinclude_file Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-msvc_link-config-0/../user_nodefs.h
+2021-01-08T10:44:11.104406Z|cov-build|8397|info|>         Node: instrument_variable
+2021-01-08T10:44:11.104406Z|cov-build|8397|info|>           Node: var_name Value: cov_instrument_config_version
+2021-01-08T10:44:11.104406Z|cov-build|8397|info|>           Node: cond_platform_value
+2021-01-08T10:44:11.104406Z|cov-build|8397|info|>             Node: platform_name Value: all
+2021-01-08T10:44:11.104406Z|cov-build|8397|info|>             Node: var_value Value: 3
+2021-01-08T10:44:11.104406Z|cov-build|8397|info|>         Node: instrument_variable
+2021-01-08T10:44:11.104406Z|cov-build|8397|info|>           Node: var_name Value: cov_lib_deployment_path
+2021-01-08T10:44:11.104406Z|cov-build|8397|info|>           Node: cond_platform_value
+2021-01-08T10:44:11.104406Z|cov-build|8397|info|>             Node: platform_name Value: all
+2021-01-08T10:44:11.104406Z|cov-build|8397|info|>             Node: var_value Value: /data00/hudson_home/workspace/Admin_Tools/upload/build/cov-analysis-linux64-2019.03/lib
+2021-01-08T10:44:11.104406Z|cov-build|8397|info|>         Node: instrument_variable
+2021-01-08T10:44:11.104406Z|cov-build|8397|info|>           Node: var_name Value: cov_lib_header_path
+2021-01-08T10:44:11.104406Z|cov-build|8397|info|>           Node: cond_platform_value
+2021-01-08T10:44:11.104406Z|cov-build|8397|info|>             Node: platform_name Value: all
+2021-01-08T10:44:11.104406Z|cov-build|8397|info|>             Node: var_value Value: /data00/hudson_home/workspace/Admin_Tools/upload/build/cov-analysis-linux64-2019.03/sdk/runtime/ta-runtime
+2021-01-08T10:44:11.104406Z|cov-build|8397|info|>         Node: instrument_variable
+2021-01-08T10:44:11.104406Z|cov-build|8397|info|>           Node: var_name Value: cov_lib_name
+2021-01-08T10:44:11.104406Z|cov-build|8397|info|>           Node: cond_platform_value
+2021-01-08T10:44:11.104406Z|cov-build|8397|info|>             Node: platform_name Value: x64
+2021-01-08T10:44:11.104406Z|cov-build|8397|info|>             Node: var_value Value: libci-runtime-x64.lib
+2021-01-08T10:44:11.104406Z|cov-build|8397|info|>           Node: cond_platform_value
+2021-01-08T10:44:11.104406Z|cov-build|8397|info|>             Node: platform_name Value: x86
+2021-01-08T10:44:11.104406Z|cov-build|8397|info|>             Node: var_value Value: libci-runtime-x86.lib
+2021-01-08T10:44:11.104406Z|cov-build|8397|info|>         Node: instrument_variable
+2021-01-08T10:44:11.104406Z|cov-build|8397|info|>           Node: var_name Value: cov_lib_path
+2021-01-08T10:44:11.104406Z|cov-build|8397|info|>           Node: cond_platform_value
+2021-01-08T10:44:11.104406Z|cov-build|8397|info|>             Node: platform_name Value: all
+2021-01-08T10:44:11.104406Z|cov-build|8397|info|>             Node: var_value Value: /data00/hudson_home/workspace/Admin_Tools/upload/build/cov-analysis-linux64-2019.03/lib
+2021-01-08T10:44:11.104406Z|cov-build|8397|info|>         Node: begin_command_line_config
+2021-01-08T10:44:11.104406Z|cov-build|8397|info|>   Node: md5 Value: 53271795ecdf08f7273d0f2d2d047fc0
+2021-01-08T10:44:11.104406Z|cov-build|8397|info|> 
+2021-01-08T10:44:11.104475Z|cov-build|8397|info|> Configuration read from: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-csc-config-0/coverity_config.xml
+2021-01-08T10:44:11.104475Z|cov-build|8397|info|> Node: coverity
+2021-01-08T10:44:11.104475Z|cov-build|8397|info|>   Node: cit_version Value: 1
+2021-01-08T10:44:11.104475Z|cov-build|8397|info|>   Node: config
+2021-01-08T10:44:11.104475Z|cov-build|8397|info|>     Node: build
+2021-01-08T10:44:11.104475Z|cov-build|8397|info|>       Node: compiler
+2021-01-08T10:44:11.104475Z|cov-build|8397|info|>         Node: template_compiler Value: true
+2021-01-08T10:44:11.104475Z|cov-build|8397|info|>         Node: comp_name Value: csc
+2021-01-08T10:44:11.104475Z|cov-build|8397|info|>         Node: comp_translator Value: csc
+2021-01-08T10:44:11.104475Z|cov-build|8397|info|>         Node: comp_lang Value: C#
+2021-01-08T10:44:11.104475Z|cov-build|8397|info|>         Node: comp_generic Value: csc
+2021-01-08T10:44:11.104475Z|cov-build|8397|info|>       Node: options
+2021-01-08T10:44:11.104475Z|cov-build|8397|info|>         Node: id Value: csc-csc-.*
+2021-01-08T10:44:11.104475Z|cov-build|8397|info|>         Node: begin_command_line_config
+2021-01-08T10:44:11.104475Z|cov-build|8397|info|>   Node: md5 Value: fe090f9c5ade85b6791417ae28e7af34
+2021-01-08T10:44:11.104475Z|cov-build|8397|info|> 
+2021-01-08T10:44:11.104498Z|cov-build|8397|info|> Configuration read from: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-csc-config-1/coverity_config.xml
+2021-01-08T10:44:11.104498Z|cov-build|8397|info|> Node: coverity
+2021-01-08T10:44:11.104498Z|cov-build|8397|info|>   Node: cit_version Value: 1
+2021-01-08T10:44:11.104498Z|cov-build|8397|info|>   Node: config
+2021-01-08T10:44:11.104498Z|cov-build|8397|info|>     Node: build
+2021-01-08T10:44:11.104498Z|cov-build|8397|info|>       Node: compiler
+2021-01-08T10:44:11.104498Z|cov-build|8397|info|>         Node: template_compiler Value: true
+2021-01-08T10:44:11.104498Z|cov-build|8397|info|>         Node: comp_name Value: csc2
+2021-01-08T10:44:11.104498Z|cov-build|8397|info|>         Node: comp_translator Value: csc
+2021-01-08T10:44:11.104498Z|cov-build|8397|info|>         Node: comp_lang Value: C#
+2021-01-08T10:44:11.104498Z|cov-build|8397|info|>         Node: comp_generic Value: csc
+2021-01-08T10:44:11.104498Z|cov-build|8397|info|>       Node: options
+2021-01-08T10:44:11.104498Z|cov-build|8397|info|>         Node: id Value: csc-csc2-.*
+2021-01-08T10:44:11.104498Z|cov-build|8397|info|>         Node: begin_command_line_config
+2021-01-08T10:44:11.104498Z|cov-build|8397|info|>   Node: md5 Value: 977437d947559cc8595a296b529da4b3
+2021-01-08T10:44:11.104498Z|cov-build|8397|info|> 
+2021-01-08T10:44:11.104523Z|cov-build|8397|info|> Configuration read from: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-csc-config-2/coverity_config.xml
+2021-01-08T10:44:11.104523Z|cov-build|8397|info|> Node: coverity
+2021-01-08T10:44:11.104523Z|cov-build|8397|info|>   Node: cit_version Value: 1
+2021-01-08T10:44:11.104523Z|cov-build|8397|info|>   Node: config
+2021-01-08T10:44:11.104523Z|cov-build|8397|info|>     Node: build
+2021-01-08T10:44:11.104523Z|cov-build|8397|info|>       Node: compiler
+2021-01-08T10:44:11.104523Z|cov-build|8397|info|>         Node: template_compiler Value: true
+2021-01-08T10:44:11.104523Z|cov-build|8397|info|>         Node: comp_name Value: csc.dll
+2021-01-08T10:44:11.104523Z|cov-build|8397|info|>         Node: comp_translator Value: csc
+2021-01-08T10:44:11.104523Z|cov-build|8397|info|>         Node: comp_lang Value: C#
+2021-01-08T10:44:11.104523Z|cov-build|8397|info|>         Node: comp_generic Value: csc
+2021-01-08T10:44:11.104523Z|cov-build|8397|info|>       Node: options
+2021-01-08T10:44:11.104523Z|cov-build|8397|info|>         Node: id Value: csc-csc.dll-.*
+2021-01-08T10:44:11.104523Z|cov-build|8397|info|>         Node: begin_command_line_config
+2021-01-08T10:44:11.104523Z|cov-build|8397|info|>   Node: md5 Value: d7617a61a1e5d38ea17e0065e15a334c
+2021-01-08T10:44:11.104523Z|cov-build|8397|info|> 
+2021-01-08T10:44:11.104547Z|cov-build|8397|info|> Configuration read from: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-dotnet-config-0/coverity_config.xml
+2021-01-08T10:44:11.104547Z|cov-build|8397|info|> Node: coverity
+2021-01-08T10:44:11.104547Z|cov-build|8397|info|>   Node: cit_version Value: 1
+2021-01-08T10:44:11.104547Z|cov-build|8397|info|>   Node: config
+2021-01-08T10:44:11.104547Z|cov-build|8397|info|>     Node: build
+2021-01-08T10:44:11.104547Z|cov-build|8397|info|>       Node: compiler
+2021-01-08T10:44:11.104547Z|cov-build|8397|info|>         Node: template_compiler Value: true
+2021-01-08T10:44:11.104547Z|cov-build|8397|info|>         Node: comp_name Value: dotnet
+2021-01-08T10:44:11.104547Z|cov-build|8397|info|>         Node: comp_translator Value: dotnet
+2021-01-08T10:44:11.104547Z|cov-build|8397|info|>         Node: comp_lang Value: C#
+2021-01-08T10:44:11.104547Z|cov-build|8397|info|>         Node: comp_capture_descendants Value: true
+2021-01-08T10:44:11.104547Z|cov-build|8397|info|>         Node: comp_generic Value: dotnet
+2021-01-08T10:44:11.104547Z|cov-build|8397|info|>       Node: options
+2021-01-08T10:44:11.104547Z|cov-build|8397|info|>         Node: id Value: dotnet-dotnet-.*
+2021-01-08T10:44:11.104547Z|cov-build|8397|info|>         Node: begin_command_line_config
+2021-01-08T10:44:11.104547Z|cov-build|8397|info|>   Node: md5 Value: c1f04f52f32e19ee321f007827420925
+2021-01-08T10:44:11.104547Z|cov-build|8397|info|> 
+2021-01-08T10:44:11.104572Z|cov-build|8397|info|> Configuration read from: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-razor-config-0/coverity_config.xml
+2021-01-08T10:44:11.104572Z|cov-build|8397|info|> Node: coverity
+2021-01-08T10:44:11.104572Z|cov-build|8397|info|>   Node: cit_version Value: 1
+2021-01-08T10:44:11.104572Z|cov-build|8397|info|>   Node: config
+2021-01-08T10:44:11.104572Z|cov-build|8397|info|>     Node: build
+2021-01-08T10:44:11.104572Z|cov-build|8397|info|>       Node: compiler
+2021-01-08T10:44:11.104572Z|cov-build|8397|info|>         Node: template_compiler Value: true
+2021-01-08T10:44:11.104572Z|cov-build|8397|info|>         Node: comp_name Value: razor
+2021-01-08T10:44:11.104572Z|cov-build|8397|info|>         Node: comp_translator Value: razor
+2021-01-08T10:44:11.104572Z|cov-build|8397|info|>         Node: comp_lang Value: Razor
+2021-01-08T10:44:11.104572Z|cov-build|8397|info|>         Node: comp_generic Value: razor
+2021-01-08T10:44:11.104572Z|cov-build|8397|info|>       Node: options
+2021-01-08T10:44:11.104572Z|cov-build|8397|info|>         Node: id Value: razor-razor-.*
+2021-01-08T10:44:11.104572Z|cov-build|8397|info|>         Node: begin_command_line_config
+2021-01-08T10:44:11.104572Z|cov-build|8397|info|>   Node: md5 Value: 299c29c5e1aed07e748c20434abece6a
+2021-01-08T10:44:11.104572Z|cov-build|8397|info|> 
+2021-01-08T10:44:11.104597Z|cov-build|8397|info|> Configuration read from: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-razor-config-1/coverity_config.xml
+2021-01-08T10:44:11.104597Z|cov-build|8397|info|> Node: coverity
+2021-01-08T10:44:11.104597Z|cov-build|8397|info|>   Node: cit_version Value: 1
+2021-01-08T10:44:11.104597Z|cov-build|8397|info|>   Node: config
+2021-01-08T10:44:11.104597Z|cov-build|8397|info|>     Node: build
+2021-01-08T10:44:11.104597Z|cov-build|8397|info|>       Node: compiler
+2021-01-08T10:44:11.104597Z|cov-build|8397|info|>         Node: template_compiler Value: true
+2021-01-08T10:44:11.104597Z|cov-build|8397|info|>         Node: comp_name Value: Microsoft.AspNetCore.Mvc.Razor.ViewCompilation.exe
+2021-01-08T10:44:11.104597Z|cov-build|8397|info|>         Node: comp_translator Value: razor
+2021-01-08T10:44:11.104597Z|cov-build|8397|info|>         Node: comp_lang Value: Razor
+2021-01-08T10:44:11.104597Z|cov-build|8397|info|>         Node: comp_generic Value: razor
+2021-01-08T10:44:11.104597Z|cov-build|8397|info|>       Node: options
+2021-01-08T10:44:11.104597Z|cov-build|8397|info|>         Node: id Value: razor-Microsoft.AspNetCore.Mvc.Razor.ViewCompilation.exe-.*
+2021-01-08T10:44:11.104597Z|cov-build|8397|info|>         Node: begin_command_line_config
+2021-01-08T10:44:11.104597Z|cov-build|8397|info|>   Node: md5 Value: b8062469abf35bf27e59c61097a25898
+2021-01-08T10:44:11.104597Z|cov-build|8397|info|> 
+2021-01-08T10:44:11.104620Z|cov-build|8397|info|> Configuration read from: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-razor-config-2/coverity_config.xml
+2021-01-08T10:44:11.104620Z|cov-build|8397|info|> Node: coverity
+2021-01-08T10:44:11.104620Z|cov-build|8397|info|>   Node: cit_version Value: 1
+2021-01-08T10:44:11.104620Z|cov-build|8397|info|>   Node: config
+2021-01-08T10:44:11.104620Z|cov-build|8397|info|>     Node: build
+2021-01-08T10:44:11.104620Z|cov-build|8397|info|>       Node: compiler
+2021-01-08T10:44:11.104620Z|cov-build|8397|info|>         Node: template_compiler Value: true
+2021-01-08T10:44:11.104620Z|cov-build|8397|info|>         Node: comp_name Value: Microsoft.AspNetCore.Mvc.Razor.ViewCompilation.dll
+2021-01-08T10:44:11.104620Z|cov-build|8397|info|>         Node: comp_translator Value: razor
+2021-01-08T10:44:11.104620Z|cov-build|8397|info|>         Node: comp_lang Value: Razor
+2021-01-08T10:44:11.104620Z|cov-build|8397|info|>         Node: comp_generic Value: razor
+2021-01-08T10:44:11.104620Z|cov-build|8397|info|>       Node: options
+2021-01-08T10:44:11.104620Z|cov-build|8397|info|>         Node: id Value: razor-Microsoft.AspNetCore.Mvc.Razor.ViewCompilation.dll-.*
+2021-01-08T10:44:11.104620Z|cov-build|8397|info|>         Node: begin_command_line_config
+2021-01-08T10:44:11.104620Z|cov-build|8397|info|>   Node: md5 Value: a9f1338dd3da86ae5a0b02feb72011bc
+2021-01-08T10:44:11.104620Z|cov-build|8397|info|> 
+2021-01-08T10:44:11.104644Z|cov-build|8397|info|> Configuration read from: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-razor-config-3/coverity_config.xml
+2021-01-08T10:44:11.104644Z|cov-build|8397|info|> Node: coverity
+2021-01-08T10:44:11.104644Z|cov-build|8397|info|>   Node: cit_version Value: 1
+2021-01-08T10:44:11.104644Z|cov-build|8397|info|>   Node: config
+2021-01-08T10:44:11.104644Z|cov-build|8397|info|>     Node: build
+2021-01-08T10:44:11.104644Z|cov-build|8397|info|>       Node: compiler
+2021-01-08T10:44:11.104644Z|cov-build|8397|info|>         Node: template_compiler Value: true
+2021-01-08T10:44:11.104644Z|cov-build|8397|info|>         Node: comp_name Value: Microsoft.AspNetCore.Mvc.Razor.ViewCompilation-x86.exe
+2021-01-08T10:44:11.104644Z|cov-build|8397|info|>         Node: comp_translator Value: razor
+2021-01-08T10:44:11.104644Z|cov-build|8397|info|>         Node: comp_lang Value: Razor
+2021-01-08T10:44:11.104644Z|cov-build|8397|info|>         Node: comp_generic Value: razor
+2021-01-08T10:44:11.104644Z|cov-build|8397|info|>       Node: options
+2021-01-08T10:44:11.104644Z|cov-build|8397|info|>         Node: id Value: razor-Microsoft.AspNetCore.Mvc.Razor.ViewCompilation-x86.exe-.*
+2021-01-08T10:44:11.104644Z|cov-build|8397|info|>         Node: begin_command_line_config
+2021-01-08T10:44:11.104644Z|cov-build|8397|info|>   Node: md5 Value: d148b26c0cca97f3cfbca9c9e97fbd2c
+2021-01-08T10:44:11.104644Z|cov-build|8397|info|> 
+2021-01-08T10:44:11.104670Z|cov-build|8397|info|> Configuration read from: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-razor-config-4/coverity_config.xml
+2021-01-08T10:44:11.104670Z|cov-build|8397|info|> Node: coverity
+2021-01-08T10:44:11.104670Z|cov-build|8397|info|>   Node: cit_version Value: 1
+2021-01-08T10:44:11.104670Z|cov-build|8397|info|>   Node: config
+2021-01-08T10:44:11.104670Z|cov-build|8397|info|>     Node: build
+2021-01-08T10:44:11.104670Z|cov-build|8397|info|>       Node: compiler
+2021-01-08T10:44:11.104670Z|cov-build|8397|info|>         Node: template_compiler Value: true
+2021-01-08T10:44:11.104670Z|cov-build|8397|info|>         Node: comp_name Value: Microsoft.AspNetCore.Mvc.Razor.ViewCompilation-x64.exe
+2021-01-08T10:44:11.104670Z|cov-build|8397|info|>         Node: comp_translator Value: razor
+2021-01-08T10:44:11.104670Z|cov-build|8397|info|>         Node: comp_lang Value: Razor
+2021-01-08T10:44:11.104670Z|cov-build|8397|info|>         Node: comp_generic Value: razor
+2021-01-08T10:44:11.104670Z|cov-build|8397|info|>       Node: options
+2021-01-08T10:44:11.104670Z|cov-build|8397|info|>         Node: id Value: razor-Microsoft.AspNetCore.Mvc.Razor.ViewCompilation-x64.exe-.*
+2021-01-08T10:44:11.104670Z|cov-build|8397|info|>         Node: begin_command_line_config
+2021-01-08T10:44:11.104670Z|cov-build|8397|info|>   Node: md5 Value: 4192dd38aff0a2b1f462f5ea2de56602
+2021-01-08T10:44:11.104670Z|cov-build|8397|info|> 
+2021-01-08T10:44:11.104694Z|cov-build|8397|info|> Configuration read from: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-razor-config-5/coverity_config.xml
+2021-01-08T10:44:11.104694Z|cov-build|8397|info|> Node: coverity
+2021-01-08T10:44:11.104694Z|cov-build|8397|info|>   Node: cit_version Value: 1
+2021-01-08T10:44:11.104694Z|cov-build|8397|info|>   Node: config
+2021-01-08T10:44:11.104694Z|cov-build|8397|info|>     Node: build
+2021-01-08T10:44:11.104694Z|cov-build|8397|info|>       Node: compiler
+2021-01-08T10:44:11.104694Z|cov-build|8397|info|>         Node: template_compiler Value: true
+2021-01-08T10:44:11.104694Z|cov-build|8397|info|>         Node: comp_name Value: Microsoft.AspNetCore.Mvc.Razor.ViewCompilation-x86.dll
+2021-01-08T10:44:11.104694Z|cov-build|8397|info|>         Node: comp_translator Value: razor
+2021-01-08T10:44:11.104694Z|cov-build|8397|info|>         Node: comp_lang Value: Razor
+2021-01-08T10:44:11.104694Z|cov-build|8397|info|>         Node: comp_generic Value: razor
+2021-01-08T10:44:11.104694Z|cov-build|8397|info|>       Node: options
+2021-01-08T10:44:11.104694Z|cov-build|8397|info|>         Node: id Value: razor-Microsoft.AspNetCore.Mvc.Razor.ViewCompilation-x86.dll-.*
+2021-01-08T10:44:11.104694Z|cov-build|8397|info|>         Node: begin_command_line_config
+2021-01-08T10:44:11.104694Z|cov-build|8397|info|>   Node: md5 Value: 9fac531b04a3ec13b4f2c7884a7b9d4d
+2021-01-08T10:44:11.104694Z|cov-build|8397|info|> 
+2021-01-08T10:44:11.104717Z|cov-build|8397|info|> Configuration read from: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-razor-config-6/coverity_config.xml
+2021-01-08T10:44:11.104717Z|cov-build|8397|info|> Node: coverity
+2021-01-08T10:44:11.104717Z|cov-build|8397|info|>   Node: cit_version Value: 1
+2021-01-08T10:44:11.104717Z|cov-build|8397|info|>   Node: config
+2021-01-08T10:44:11.104717Z|cov-build|8397|info|>     Node: build
+2021-01-08T10:44:11.104717Z|cov-build|8397|info|>       Node: compiler
+2021-01-08T10:44:11.104717Z|cov-build|8397|info|>         Node: template_compiler Value: true
+2021-01-08T10:44:11.104717Z|cov-build|8397|info|>         Node: comp_name Value: Microsoft.AspNetCore.Mvc.Razor.ViewCompilation-x64.dll
+2021-01-08T10:44:11.104717Z|cov-build|8397|info|>         Node: comp_translator Value: razor
+2021-01-08T10:44:11.104717Z|cov-build|8397|info|>         Node: comp_lang Value: Razor
+2021-01-08T10:44:11.104717Z|cov-build|8397|info|>         Node: comp_generic Value: razor
+2021-01-08T10:44:11.104717Z|cov-build|8397|info|>       Node: options
+2021-01-08T10:44:11.104717Z|cov-build|8397|info|>         Node: id Value: razor-Microsoft.AspNetCore.Mvc.Razor.ViewCompilation-x64.dll-.*
+2021-01-08T10:44:11.104717Z|cov-build|8397|info|>         Node: begin_command_line_config
+2021-01-08T10:44:11.104717Z|cov-build|8397|info|>   Node: md5 Value: 42e63af2dc0e9a8129a530b0de6d639f
+2021-01-08T10:44:11.104717Z|cov-build|8397|info|> 
+2021-01-08T10:44:11.104743Z|cov-build|8397|info|> Configuration read from: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-clangcc-config-0/coverity_config.xml
+2021-01-08T10:44:11.104743Z|cov-build|8397|info|> Node: coverity
+2021-01-08T10:44:11.104743Z|cov-build|8397|info|>   Node: cit_version Value: 1
+2021-01-08T10:44:11.104743Z|cov-build|8397|info|>   Node: config
+2021-01-08T10:44:11.104743Z|cov-build|8397|info|>     Node: build
+2021-01-08T10:44:11.104743Z|cov-build|8397|info|>       Node: compiler
+2021-01-08T10:44:11.104743Z|cov-build|8397|info|>         Node: template_compiler Value: true
+2021-01-08T10:44:11.104743Z|cov-build|8397|info|>         Node: comp_name Value: clang
+2021-01-08T10:44:11.104743Z|cov-build|8397|info|>         Node: comp_translator Value: clangcc
+2021-01-08T10:44:11.104743Z|cov-build|8397|info|>         Node: comp_lang Value: C/C++
+2021-01-08T10:44:11.104743Z|cov-build|8397|info|>         Node: comp_generic Value: clang
+2021-01-08T10:44:11.104743Z|cov-build|8397|info|>       Node: options
+2021-01-08T10:44:11.104743Z|cov-build|8397|info|>         Node: id Value: clangcc-clang-.*
+2021-01-08T10:44:11.104743Z|cov-build|8397|info|>         Node: opt_preinclude_file Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-clangcc-config-0/../user_nodefs.h
+2021-01-08T10:44:11.104743Z|cov-build|8397|info|>         Node: begin_command_line_config
+2021-01-08T10:44:11.104743Z|cov-build|8397|info|>       Node: options
+2021-01-08T10:44:11.104743Z|cov-build|8397|info|>         Node: id Value: clangcxx-clang-.*
+2021-01-08T10:44:11.104743Z|cov-build|8397|info|>         Node: opt_preinclude_file Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-clangcc-config-0/../user_nodefs.h
+2021-01-08T10:44:11.104743Z|cov-build|8397|info|>         Node: begin_command_line_config
+2021-01-08T10:44:11.104743Z|cov-build|8397|info|>       Node: options
+2021-01-08T10:44:11.104743Z|cov-build|8397|info|>         Node: id Value: clangcxxcc-clang-.*
+2021-01-08T10:44:11.104743Z|cov-build|8397|info|>         Node: opt_preinclude_file Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-clangcc-config-0/../user_nodefs.h
+2021-01-08T10:44:11.104743Z|cov-build|8397|info|>         Node: begin_command_line_config
+2021-01-08T10:44:11.104743Z|cov-build|8397|info|>       Node: options
+2021-01-08T10:44:11.104743Z|cov-build|8397|info|>         Node: id Value: clangobjc-clang-.*
+2021-01-08T10:44:11.104743Z|cov-build|8397|info|>         Node: opt_preinclude_file Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-clangcc-config-0/../user_nodefs.h
+2021-01-08T10:44:11.104743Z|cov-build|8397|info|>         Node: begin_command_line_config
+2021-01-08T10:44:11.104743Z|cov-build|8397|info|>       Node: options
+2021-01-08T10:44:11.104743Z|cov-build|8397|info|>         Node: id Value: clangobjcxx-clang-.*
+2021-01-08T10:44:11.104743Z|cov-build|8397|info|>         Node: opt_preinclude_file Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-clangcc-config-0/../user_nodefs.h
+2021-01-08T10:44:11.104743Z|cov-build|8397|info|>         Node: begin_command_line_config
+2021-01-08T10:44:11.104743Z|cov-build|8397|info|>   Node: md5 Value: 15fd1279f5d22c97f5ebadaac9bf1e6b
+2021-01-08T10:44:11.104743Z|cov-build|8397|info|> 
+2021-01-08T10:44:11.104793Z|cov-build|8397|info|> Configuration read from: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-clangcxx-config-0/coverity_config.xml
+2021-01-08T10:44:11.104793Z|cov-build|8397|info|> Node: coverity
+2021-01-08T10:44:11.104793Z|cov-build|8397|info|>   Node: cit_version Value: 1
+2021-01-08T10:44:11.104793Z|cov-build|8397|info|>   Node: config
+2021-01-08T10:44:11.104793Z|cov-build|8397|info|>     Node: build
+2021-01-08T10:44:11.104793Z|cov-build|8397|info|>       Node: compiler
+2021-01-08T10:44:11.104793Z|cov-build|8397|info|>         Node: template_compiler Value: true
+2021-01-08T10:44:11.104793Z|cov-build|8397|info|>         Node: comp_name Value: clang++
+2021-01-08T10:44:11.104793Z|cov-build|8397|info|>         Node: comp_translator Value: clangcxx
+2021-01-08T10:44:11.104793Z|cov-build|8397|info|>         Node: comp_lang Value: C/C++
+2021-01-08T10:44:11.104793Z|cov-build|8397|info|>         Node: comp_generic Value: clang
+2021-01-08T10:44:11.104793Z|cov-build|8397|info|>       Node: options
+2021-01-08T10:44:11.104793Z|cov-build|8397|info|>         Node: id Value: clangcxx-clang++-.*
+2021-01-08T10:44:11.104793Z|cov-build|8397|info|>         Node: opt_preinclude_file Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-clangcxx-config-0/../user_nodefs.h
+2021-01-08T10:44:11.104793Z|cov-build|8397|info|>         Node: begin_command_line_config
+2021-01-08T10:44:11.104793Z|cov-build|8397|info|>       Node: options
+2021-01-08T10:44:11.104793Z|cov-build|8397|info|>         Node: id Value: clangcxxcc-clang++-.*
+2021-01-08T10:44:11.104793Z|cov-build|8397|info|>         Node: opt_preinclude_file Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-clangcxx-config-0/../user_nodefs.h
+2021-01-08T10:44:11.104793Z|cov-build|8397|info|>         Node: begin_command_line_config
+2021-01-08T10:44:11.104793Z|cov-build|8397|info|>       Node: options
+2021-01-08T10:44:11.104793Z|cov-build|8397|info|>         Node: id Value: clangobjc-clang++-.*
+2021-01-08T10:44:11.104793Z|cov-build|8397|info|>         Node: opt_preinclude_file Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-clangcxx-config-0/../user_nodefs.h
+2021-01-08T10:44:11.104793Z|cov-build|8397|info|>         Node: begin_command_line_config
+2021-01-08T10:44:11.104793Z|cov-build|8397|info|>       Node: options
+2021-01-08T10:44:11.104793Z|cov-build|8397|info|>         Node: id Value: clangobjcxx-clang++-.*
+2021-01-08T10:44:11.104793Z|cov-build|8397|info|>         Node: opt_preinclude_file Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-clangcxx-config-0/../user_nodefs.h
+2021-01-08T10:44:11.104793Z|cov-build|8397|info|>         Node: begin_command_line_config
+2021-01-08T10:44:11.104793Z|cov-build|8397|info|>   Node: md5 Value: a5fffed9db920f7281ac5687f6514630
+2021-01-08T10:44:11.104793Z|cov-build|8397|info|> 
+2021-01-08T10:44:11.104836Z|cov-build|8397|info|> Configuration read from: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-javascript-config-0/coverity_config.xml
+2021-01-08T10:44:11.104836Z|cov-build|8397|info|> Node: coverity
+2021-01-08T10:44:11.104836Z|cov-build|8397|info|>   Node: cit_version Value: 1
+2021-01-08T10:44:11.104836Z|cov-build|8397|info|>   Node: config
+2021-01-08T10:44:11.104836Z|cov-build|8397|info|>     Node: build
+2021-01-08T10:44:11.104836Z|cov-build|8397|info|>       Node: compiler
+2021-01-08T10:44:11.104836Z|cov-build|8397|info|>         Node: template_compiler Value: true
+2021-01-08T10:44:11.104836Z|cov-build|8397|info|>         Node: comp_name Value: cov-filesystem-capture-javascript-0
+2021-01-08T10:44:11.104836Z|cov-build|8397|info|>         Node: comp_translator Value: javascript
+2021-01-08T10:44:11.104836Z|cov-build|8397|info|>         Node: comp_lang Value: Non Compiled
+2021-01-08T10:44:11.104836Z|cov-build|8397|info|>         Node: comp_generic Value: javascript
+2021-01-08T10:44:11.104836Z|cov-build|8397|info|>         Node: file_include_pattern Value: ^.*\.(js|xsjs|xsjslib|map)$
+2021-01-08T10:44:11.104836Z|cov-build|8397|info|>         Node: file_exclude_pattern Value: [/\\]node_modules[/\\]
+2021-01-08T10:44:11.104836Z|cov-build|8397|info|>         Node: file_exclude_pattern Value: [/\\]jquery[^/\\]*[.]js$
+2021-01-08T10:44:11.104836Z|cov-build|8397|info|>         Node: file_exclude_pattern Value: [/\\][^/\\]*-vsdoc[.]js$
+2021-01-08T10:44:11.104836Z|cov-build|8397|info|>       Node: options
+2021-01-08T10:44:11.104836Z|cov-build|8397|info|>         Node: id Value: javascript-cov-filesystem-capture-javascript-0-.*
+2021-01-08T10:44:11.104836Z|cov-build|8397|info|>         Node: begin_command_line_config
+2021-01-08T10:44:11.104836Z|cov-build|8397|info|>   Node: md5 Value: 5dc7fe28a5d7a345225ec3edabbf5701
+2021-01-08T10:44:11.104836Z|cov-build|8397|info|> 
+2021-01-08T10:44:11.104869Z|cov-build|8397|info|> Configuration read from: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-html-config-0/coverity_config.xml
+2021-01-08T10:44:11.104869Z|cov-build|8397|info|> Node: coverity
+2021-01-08T10:44:11.104869Z|cov-build|8397|info|>   Node: cit_version Value: 1
+2021-01-08T10:44:11.104869Z|cov-build|8397|info|>   Node: config
+2021-01-08T10:44:11.104869Z|cov-build|8397|info|>     Node: build
+2021-01-08T10:44:11.104869Z|cov-build|8397|info|>       Node: compiler
+2021-01-08T10:44:11.104869Z|cov-build|8397|info|>         Node: template_compiler Value: true
+2021-01-08T10:44:11.104869Z|cov-build|8397|info|>         Node: comp_name Value: cov-filesystem-capture-html-0
+2021-01-08T10:44:11.104869Z|cov-build|8397|info|>         Node: comp_translator Value: html
+2021-01-08T10:44:11.104869Z|cov-build|8397|info|>         Node: comp_lang Value: Non Compiled
+2021-01-08T10:44:11.104869Z|cov-build|8397|info|>         Node: comp_generic Value: javascript
+2021-01-08T10:44:11.104869Z|cov-build|8397|info|>         Node: file_include_pattern Value: ^.*\.(html|htm)$
+2021-01-08T10:44:11.104869Z|cov-build|8397|info|>         Node: file_exclude_pattern Value: [/\\]node_modules[/\\]
+2021-01-08T10:44:11.104869Z|cov-build|8397|info|>         Node: file_exclude_pattern Value: [/\\]jquery[^/\\]*[.]js$
+2021-01-08T10:44:11.104869Z|cov-build|8397|info|>         Node: file_exclude_pattern Value: [/\\][^/\\]*-vsdoc[.]js$
+2021-01-08T10:44:11.104869Z|cov-build|8397|info|>       Node: options
+2021-01-08T10:44:11.104869Z|cov-build|8397|info|>         Node: id Value: html-cov-filesystem-capture-html-0-.*
+2021-01-08T10:44:11.104869Z|cov-build|8397|info|>         Node: begin_command_line_config
+2021-01-08T10:44:11.104869Z|cov-build|8397|info|>   Node: md5 Value: 874e134728d1412d745d699feb38e141
+2021-01-08T10:44:11.104869Z|cov-build|8397|info|> 
+2021-01-08T10:44:11.104899Z|cov-build|8397|info|> Configuration read from: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-typescript-config-0/coverity_config.xml
+2021-01-08T10:44:11.104899Z|cov-build|8397|info|> Node: coverity
+2021-01-08T10:44:11.104899Z|cov-build|8397|info|>   Node: cit_version Value: 1
+2021-01-08T10:44:11.104899Z|cov-build|8397|info|>   Node: config
+2021-01-08T10:44:11.104899Z|cov-build|8397|info|>     Node: build
+2021-01-08T10:44:11.104899Z|cov-build|8397|info|>       Node: compiler
+2021-01-08T10:44:11.104899Z|cov-build|8397|info|>         Node: template_compiler Value: true
+2021-01-08T10:44:11.104899Z|cov-build|8397|info|>         Node: comp_name Value: cov-filesystem-capture-typescript-0
+2021-01-08T10:44:11.104899Z|cov-build|8397|info|>         Node: comp_translator Value: typescript
+2021-01-08T10:44:11.104899Z|cov-build|8397|info|>         Node: comp_lang Value: Non Compiled
+2021-01-08T10:44:11.104899Z|cov-build|8397|info|>         Node: comp_generic Value: typescript
+2021-01-08T10:44:11.104899Z|cov-build|8397|info|>         Node: file_include_pattern Value: ^.*(\.ts(x?)|tsconfig.json)$
+2021-01-08T10:44:11.104899Z|cov-build|8397|info|>         Node: file_exclude_pattern Value: [/\\]node_modules[/\\]
+2021-01-08T10:44:11.104899Z|cov-build|8397|info|>         Node: file_exclude_pattern Value: [/\\]jquery[^/\\]*[.]js$
+2021-01-08T10:44:11.104899Z|cov-build|8397|info|>         Node: file_exclude_pattern Value: [/\\][^/\\]*-vsdoc[.]js$
+2021-01-08T10:44:11.104899Z|cov-build|8397|info|>       Node: options
+2021-01-08T10:44:11.104899Z|cov-build|8397|info|>         Node: id Value: typescript-cov-filesystem-capture-typescript-0-.*
+2021-01-08T10:44:11.104899Z|cov-build|8397|info|>         Node: begin_command_line_config
+2021-01-08T10:44:11.104899Z|cov-build|8397|info|>   Node: md5 Value: 0fbcd451629a877b0945511269f745bd
+2021-01-08T10:44:11.104899Z|cov-build|8397|info|> 
+2021-01-08T10:44:11.104937Z|cov-build|8397|info|> Configuration read from: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-jsx-config-0/coverity_config.xml
+2021-01-08T10:44:11.104937Z|cov-build|8397|info|> Node: coverity
+2021-01-08T10:44:11.104937Z|cov-build|8397|info|>   Node: cit_version Value: 1
+2021-01-08T10:44:11.104937Z|cov-build|8397|info|>   Node: config
+2021-01-08T10:44:11.104937Z|cov-build|8397|info|>     Node: build
+2021-01-08T10:44:11.104937Z|cov-build|8397|info|>       Node: compiler
+2021-01-08T10:44:11.104937Z|cov-build|8397|info|>         Node: template_compiler Value: true
+2021-01-08T10:44:11.104937Z|cov-build|8397|info|>         Node: comp_name Value: cov-filesystem-capture-jsx-0
+2021-01-08T10:44:11.104937Z|cov-build|8397|info|>         Node: comp_translator Value: jsx
+2021-01-08T10:44:11.104937Z|cov-build|8397|info|>         Node: comp_lang Value: Non Compiled
+2021-01-08T10:44:11.104937Z|cov-build|8397|info|>         Node: comp_generic Value: javascript
+2021-01-08T10:44:11.104937Z|cov-build|8397|info|>         Node: file_include_pattern Value: ^.*\.jsx$
+2021-01-08T10:44:11.104937Z|cov-build|8397|info|>         Node: file_exclude_pattern Value: [/\\]node_modules[/\\]
+2021-01-08T10:44:11.104937Z|cov-build|8397|info|>         Node: file_exclude_pattern Value: [/\\]jquery[^/\\]*[.]js$
+2021-01-08T10:44:11.104937Z|cov-build|8397|info|>         Node: file_exclude_pattern Value: [/\\][^/\\]*-vsdoc[.]js$
+2021-01-08T10:44:11.104937Z|cov-build|8397|info|>       Node: options
+2021-01-08T10:44:11.104937Z|cov-build|8397|info|>         Node: id Value: jsx-cov-filesystem-capture-jsx-0-.*
+2021-01-08T10:44:11.104937Z|cov-build|8397|info|>         Node: begin_command_line_config
+2021-01-08T10:44:11.104937Z|cov-build|8397|info|>   Node: md5 Value: 6ef7db223c129acd408eed304126e3a1
+2021-01-08T10:44:11.104937Z|cov-build|8397|info|> 
+2021-01-08T10:44:11.104967Z|cov-build|8397|info|> Configuration read from: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-vue-config-0/coverity_config.xml
+2021-01-08T10:44:11.104967Z|cov-build|8397|info|> Node: coverity
+2021-01-08T10:44:11.104967Z|cov-build|8397|info|>   Node: cit_version Value: 1
+2021-01-08T10:44:11.104967Z|cov-build|8397|info|>   Node: config
+2021-01-08T10:44:11.104967Z|cov-build|8397|info|>     Node: build
+2021-01-08T10:44:11.104967Z|cov-build|8397|info|>       Node: compiler
+2021-01-08T10:44:11.104967Z|cov-build|8397|info|>         Node: template_compiler Value: true
+2021-01-08T10:44:11.104967Z|cov-build|8397|info|>         Node: comp_name Value: cov-filesystem-capture-vue-0
+2021-01-08T10:44:11.104967Z|cov-build|8397|info|>         Node: comp_translator Value: vue
+2021-01-08T10:44:11.104967Z|cov-build|8397|info|>         Node: comp_lang Value: Non Compiled
+2021-01-08T10:44:11.104967Z|cov-build|8397|info|>         Node: comp_generic Value: javascript
+2021-01-08T10:44:11.104967Z|cov-build|8397|info|>         Node: file_include_pattern Value: ^.*\.vue$
+2021-01-08T10:44:11.104967Z|cov-build|8397|info|>         Node: file_exclude_pattern Value: [/\\]node_modules[/\\]
+2021-01-08T10:44:11.104967Z|cov-build|8397|info|>         Node: file_exclude_pattern Value: [/\\]jquery[^/\\]*[.]js$
+2021-01-08T10:44:11.104967Z|cov-build|8397|info|>         Node: file_exclude_pattern Value: [/\\][^/\\]*-vsdoc[.]js$
+2021-01-08T10:44:11.104967Z|cov-build|8397|info|>       Node: options
+2021-01-08T10:44:11.104967Z|cov-build|8397|info|>         Node: id Value: vue-cov-filesystem-capture-vue-0-.*
+2021-01-08T10:44:11.104967Z|cov-build|8397|info|>         Node: begin_command_line_config
+2021-01-08T10:44:11.104967Z|cov-build|8397|info|>   Node: md5 Value: e2e0d3714ab927a7bdeebe5c48dde342
+2021-01-08T10:44:11.104967Z|cov-build|8397|info|> 
+2021-01-08T10:44:11.104999Z|cov-build|8397|info|> Configuration read from: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-scalac-config-0/coverity_config.xml
+2021-01-08T10:44:11.104999Z|cov-build|8397|info|> Node: coverity
+2021-01-08T10:44:11.104999Z|cov-build|8397|info|>   Node: cit_version Value: 1
+2021-01-08T10:44:11.104999Z|cov-build|8397|info|>   Node: config
+2021-01-08T10:44:11.104999Z|cov-build|8397|info|>     Node: build
+2021-01-08T10:44:11.104999Z|cov-build|8397|info|>       Node: compiler
+2021-01-08T10:44:11.104999Z|cov-build|8397|info|>         Node: template_compiler Value: true
+2021-01-08T10:44:11.104999Z|cov-build|8397|info|>         Node: comp_name Value: scalac
+2021-01-08T10:44:11.104999Z|cov-build|8397|info|>         Node: comp_translator Value: scalac
+2021-01-08T10:44:11.104999Z|cov-build|8397|info|>         Node: comp_lang Value: Scala
+2021-01-08T10:44:11.104999Z|cov-build|8397|info|>         Node: comp_generic Value: scala
+2021-01-08T10:44:11.104999Z|cov-build|8397|info|>       Node: options
+2021-01-08T10:44:11.104999Z|cov-build|8397|info|>         Node: id Value: scalac-scalac-.*
+2021-01-08T10:44:11.104999Z|cov-build|8397|info|>         Node: begin_command_line_config
+2021-01-08T10:44:11.104999Z|cov-build|8397|info|>   Node: md5 Value: 72f6e51a33977034a91c37366e5501cc
+2021-01-08T10:44:11.104999Z|cov-build|8397|info|> 
+2021-01-08T10:44:11.105022Z|cov-build|8397|info|> Configuration read from: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-scala-config-0/coverity_config.xml
+2021-01-08T10:44:11.105022Z|cov-build|8397|info|> Node: coverity
+2021-01-08T10:44:11.105022Z|cov-build|8397|info|>   Node: cit_version Value: 1
+2021-01-08T10:44:11.105022Z|cov-build|8397|info|>   Node: config
+2021-01-08T10:44:11.105022Z|cov-build|8397|info|>     Node: build
+2021-01-08T10:44:11.105022Z|cov-build|8397|info|>       Node: compiler
+2021-01-08T10:44:11.105022Z|cov-build|8397|info|>         Node: template_compiler Value: true
+2021-01-08T10:44:11.105022Z|cov-build|8397|info|>         Node: comp_name Value: scala
+2021-01-08T10:44:11.105022Z|cov-build|8397|info|>         Node: comp_translator Value: scala
+2021-01-08T10:44:11.105022Z|cov-build|8397|info|>         Node: comp_lang Value: Scala
+2021-01-08T10:44:11.105022Z|cov-build|8397|info|>         Node: comp_generic Value: scala
+2021-01-08T10:44:11.105022Z|cov-build|8397|info|>       Node: options
+2021-01-08T10:44:11.105022Z|cov-build|8397|info|>         Node: id Value: scala-scala-.*
+2021-01-08T10:44:11.105022Z|cov-build|8397|info|>         Node: begin_command_line_config
+2021-01-08T10:44:11.105022Z|cov-build|8397|info|>   Node: md5 Value: 06e293540a5f4dc8f97f0f06a6021b74
+2021-01-08T10:44:11.105022Z|cov-build|8397|info|> 
+2021-01-08T10:44:11.105046Z|cov-build|8397|info|> Configuration read from: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-swiftc-config-0/coverity_config.xml
+2021-01-08T10:44:11.105046Z|cov-build|8397|info|> Node: coverity
+2021-01-08T10:44:11.105046Z|cov-build|8397|info|>   Node: cit_version Value: 1
+2021-01-08T10:44:11.105046Z|cov-build|8397|info|>   Node: config
+2021-01-08T10:44:11.105046Z|cov-build|8397|info|>     Node: build
+2021-01-08T10:44:11.105046Z|cov-build|8397|info|>       Node: compiler
+2021-01-08T10:44:11.105046Z|cov-build|8397|info|>         Node: template_compiler Value: true
+2021-01-08T10:44:11.105046Z|cov-build|8397|info|>         Node: comp_name Value: swiftc
+2021-01-08T10:44:11.105046Z|cov-build|8397|info|>         Node: comp_translator Value: swiftc
+2021-01-08T10:44:11.105046Z|cov-build|8397|info|>         Node: comp_lang Value: Swift
+2021-01-08T10:44:11.105046Z|cov-build|8397|info|>         Node: comp_generic Value: swift
+2021-01-08T10:44:11.105046Z|cov-build|8397|info|>       Node: options
+2021-01-08T10:44:11.105046Z|cov-build|8397|info|>         Node: id Value: swiftc-swiftc-.*
+2021-01-08T10:44:11.105046Z|cov-build|8397|info|>         Node: begin_command_line_config
+2021-01-08T10:44:11.105046Z|cov-build|8397|info|>   Node: md5 Value: 23140da751bb0ef0b36a4b63d655d971
+2021-01-08T10:44:11.105046Z|cov-build|8397|info|> 
+2021-01-08T10:44:11.105071Z|cov-build|8397|info|> Configuration read from: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-vbc-config-0/coverity_config.xml
+2021-01-08T10:44:11.105071Z|cov-build|8397|info|> Node: coverity
+2021-01-08T10:44:11.105071Z|cov-build|8397|info|>   Node: cit_version Value: 1
+2021-01-08T10:44:11.105071Z|cov-build|8397|info|>   Node: config
+2021-01-08T10:44:11.105071Z|cov-build|8397|info|>     Node: build
+2021-01-08T10:44:11.105071Z|cov-build|8397|info|>       Node: compiler
+2021-01-08T10:44:11.105071Z|cov-build|8397|info|>         Node: template_compiler Value: true
+2021-01-08T10:44:11.105071Z|cov-build|8397|info|>         Node: comp_name Value: vbc
+2021-01-08T10:44:11.105071Z|cov-build|8397|info|>         Node: comp_translator Value: vbc
+2021-01-08T10:44:11.105071Z|cov-build|8397|info|>         Node: comp_lang Value: Visual Basic
+2021-01-08T10:44:11.105071Z|cov-build|8397|info|>         Node: comp_generic Value: vbc
+2021-01-08T10:44:11.105071Z|cov-build|8397|info|>       Node: options
+2021-01-08T10:44:11.105071Z|cov-build|8397|info|>         Node: id Value: vbc-vbc-.*
+2021-01-08T10:44:11.105071Z|cov-build|8397|info|>         Node: begin_command_line_config
+2021-01-08T10:44:11.105071Z|cov-build|8397|info|>   Node: md5 Value: feeb8b03a6f975f0aaca18abe6c96895
+2021-01-08T10:44:11.105071Z|cov-build|8397|info|> 
+2021-01-08T10:44:11.105094Z|cov-build|8397|info|> Configuration read from: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-vbc-config-1/coverity_config.xml
+2021-01-08T10:44:11.105094Z|cov-build|8397|info|> Node: coverity
+2021-01-08T10:44:11.105094Z|cov-build|8397|info|>   Node: cit_version Value: 1
+2021-01-08T10:44:11.105094Z|cov-build|8397|info|>   Node: config
+2021-01-08T10:44:11.105094Z|cov-build|8397|info|>     Node: build
+2021-01-08T10:44:11.105094Z|cov-build|8397|info|>       Node: compiler
+2021-01-08T10:44:11.105094Z|cov-build|8397|info|>         Node: template_compiler Value: true
+2021-01-08T10:44:11.105094Z|cov-build|8397|info|>         Node: comp_name Value: vbc.dll
+2021-01-08T10:44:11.105094Z|cov-build|8397|info|>         Node: comp_translator Value: vbc
+2021-01-08T10:44:11.105094Z|cov-build|8397|info|>         Node: comp_lang Value: Visual Basic
+2021-01-08T10:44:11.105094Z|cov-build|8397|info|>         Node: comp_generic Value: vbc
+2021-01-08T10:44:11.105094Z|cov-build|8397|info|>       Node: options
+2021-01-08T10:44:11.105094Z|cov-build|8397|info|>         Node: id Value: vbc-vbc.dll-.*
+2021-01-08T10:44:11.105094Z|cov-build|8397|info|>         Node: begin_command_line_config
+2021-01-08T10:44:11.105094Z|cov-build|8397|info|>   Node: md5 Value: fb11aa1996139335dbc0bdc5b4851b37
+2021-01-08T10:44:11.105094Z|cov-build|8397|info|> 
+2021-01-08T10:44:11.105118Z|cov-build|8397|info|> Configuration read from: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-ruby-config-0/coverity_config.xml
+2021-01-08T10:44:11.105118Z|cov-build|8397|info|> Node: coverity
+2021-01-08T10:44:11.105118Z|cov-build|8397|info|>   Node: cit_version Value: 1
+2021-01-08T10:44:11.105118Z|cov-build|8397|info|>   Node: config
+2021-01-08T10:44:11.105118Z|cov-build|8397|info|>     Node: build
+2021-01-08T10:44:11.105118Z|cov-build|8397|info|>       Node: compiler
+2021-01-08T10:44:11.105118Z|cov-build|8397|info|>         Node: template_compiler Value: true
+2021-01-08T10:44:11.105118Z|cov-build|8397|info|>         Node: comp_name Value: cov-filesystem-capture-ruby-0
+2021-01-08T10:44:11.105118Z|cov-build|8397|info|>         Node: comp_translator Value: ruby
+2021-01-08T10:44:11.105118Z|cov-build|8397|info|>         Node: comp_lang Value: Non Compiled
+2021-01-08T10:44:11.105118Z|cov-build|8397|info|>         Node: comp_generic Value: ruby
+2021-01-08T10:44:11.105118Z|cov-build|8397|info|>         Node: file_include_pattern Value: ^.*(\.rb|Gemfile)$
+2021-01-08T10:44:11.105118Z|cov-build|8397|info|>       Node: options
+2021-01-08T10:44:11.105118Z|cov-build|8397|info|>         Node: id Value: ruby-cov-filesystem-capture-ruby-0-.*
+2021-01-08T10:44:11.105118Z|cov-build|8397|info|>         Node: begin_command_line_config
+2021-01-08T10:44:11.105118Z|cov-build|8397|info|>   Node: md5 Value: 9a95acc499de60467aeb7e3b29315f90
+2021-01-08T10:44:11.105118Z|cov-build|8397|info|> 
+2021-01-08T10:44:11.105146Z|cov-build|8397|info|> Configuration read from: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-php-config-0/coverity_config.xml
+2021-01-08T10:44:11.105146Z|cov-build|8397|info|> Node: coverity
+2021-01-08T10:44:11.105146Z|cov-build|8397|info|>   Node: cit_version Value: 1
+2021-01-08T10:44:11.105146Z|cov-build|8397|info|>   Node: config
+2021-01-08T10:44:11.105146Z|cov-build|8397|info|>     Node: build
+2021-01-08T10:44:11.105146Z|cov-build|8397|info|>       Node: compiler
+2021-01-08T10:44:11.105146Z|cov-build|8397|info|>         Node: template_compiler Value: true
+2021-01-08T10:44:11.105146Z|cov-build|8397|info|>         Node: comp_name Value: cov-filesystem-capture-php-0
+2021-01-08T10:44:11.105146Z|cov-build|8397|info|>         Node: comp_translator Value: php
+2021-01-08T10:44:11.105146Z|cov-build|8397|info|>         Node: comp_lang Value: Non Compiled
+2021-01-08T10:44:11.105146Z|cov-build|8397|info|>         Node: comp_generic Value: php
+2021-01-08T10:44:11.105146Z|cov-build|8397|info|>         Node: file_include_pattern Value: ^.*\.ph(p|p3|p4|p5|p7|tml)$
+2021-01-08T10:44:11.105146Z|cov-build|8397|info|>       Node: options
+2021-01-08T10:44:11.105146Z|cov-build|8397|info|>         Node: id Value: php-cov-filesystem-capture-php-0-.*
+2021-01-08T10:44:11.105146Z|cov-build|8397|info|>         Node: begin_command_line_config
+2021-01-08T10:44:11.105146Z|cov-build|8397|info|>   Node: md5 Value: 6db33a0a68d7f8c9b0f5085b9afaab3b
+2021-01-08T10:44:11.105146Z|cov-build|8397|info|> 
+2021-01-08T10:44:11.105171Z|cov-build|8397|info|> Configuration read from: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/template-python-config-0/coverity_config.xml
+2021-01-08T10:44:11.105171Z|cov-build|8397|info|> Node: coverity
+2021-01-08T10:44:11.105171Z|cov-build|8397|info|>   Node: cit_version Value: 1
+2021-01-08T10:44:11.105171Z|cov-build|8397|info|>   Node: config
+2021-01-08T10:44:11.105171Z|cov-build|8397|info|>     Node: build
+2021-01-08T10:44:11.105171Z|cov-build|8397|info|>       Node: compiler
+2021-01-08T10:44:11.105171Z|cov-build|8397|info|>         Node: template_compiler Value: true
+2021-01-08T10:44:11.105171Z|cov-build|8397|info|>         Node: comp_name Value: cov-filesystem-capture-python-0
+2021-01-08T10:44:11.105171Z|cov-build|8397|info|>         Node: comp_translator Value: python
+2021-01-08T10:44:11.105171Z|cov-build|8397|info|>         Node: comp_lang Value: Non Compiled
+2021-01-08T10:44:11.105171Z|cov-build|8397|info|>         Node: comp_generic Value: python
+2021-01-08T10:44:11.105171Z|cov-build|8397|info|>         Node: file_include_pattern Value: ^.*\.py$
+2021-01-08T10:44:11.105171Z|cov-build|8397|info|>       Node: options
+2021-01-08T10:44:11.105171Z|cov-build|8397|info|>         Node: id Value: python-cov-filesystem-capture-python-0-.*
+2021-01-08T10:44:11.105171Z|cov-build|8397|info|>         Node: begin_command_line_config
+2021-01-08T10:44:11.105171Z|cov-build|8397|info|>   Node: md5 Value: 4498fd410774a9faa0109aad2e182841
+2021-01-08T10:44:11.105171Z|cov-build|8397|info|> 
+2021-01-08T10:44:11.106326Z|cov-build|8397|info|> Using LD_PRELOAD = /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/bin/libcapture-linux64-${PLATFORM}.so
+[8400] EXECUTING: make -j 4
+[8401] EXECUTING: /usr/local/bin/cmake -S/home/xuwenchu/Documents/ResourceLeak -B/home/xuwenchu/Documents/ResourceLeak/build --check-build-system CMakeFiles/Makefile.cmake 0
+[8402] EXECUTING: /usr/local/bin/cmake -E cmake_progress_start /home/xuwenchu/Documents/ResourceLeak/build/CMakeFiles /home/xuwenchu/Documents/ResourceLeak/build/CMakeFiles/progress.marks
+[8405] EXECUTING: /bin/sh -c "cd /home/xuwenchu/Documents/ResourceLeak/build && /usr/local/bin/cmake -E cmake_depends "Unix Makefiles" /home/xuwenchu/Documents/ResourceLeak /home/xuwenchu/Documents/ResourceLeak/test /home/xuwenchu/Documents/ResourceLeak/build /home/xuwenchu/Documents/ResourceLeak/build/test /home/xuwenchu/Documents/ResourceLeak/build/test/CMakeFiles/test.dir/DependInfo.cmake --color="
+[8406] EXECUTING: /usr/local/bin/cmake -E cmake_depends "Unix Makefiles" /home/xuwenchu/Documents/ResourceLeak /home/xuwenchu/Documents/ResourceLeak/test /home/xuwenchu/Documents/ResourceLeak/build /home/xuwenchu/Documents/ResourceLeak/build/test /home/xuwenchu/Documents/ResourceLeak/build/test/CMakeFiles/test.dir/DependInfo.cmake --color=
+[8408] EXECUTING: /bin/sh -c "/usr/local/bin/cmake -E cmake_echo_color --switch= --green --progress-dir=/home/xuwenchu/Documents/ResourceLeak/build/CMakeFiles --progress-num=1 "Building CXX object test/CMakeFiles/test.dir/test.cpp.o""
+[8409] EXECUTING: /usr/local/bin/cmake -E cmake_echo_color --switch= --green --progress-dir=/home/xuwenchu/Documents/ResourceLeak/build/CMakeFiles --progress-num=1 "Building CXX object test/CMakeFiles/test.dir/test.cpp.o"
+[8410] EXECUTING: /bin/sh -c "cd /home/xuwenchu/Documents/ResourceLeak/build/test && /usr/bin/c++     -o CMakeFiles/test.dir/test.cpp.o -c /home/xuwenchu/Documents/ResourceLeak/test/test.cpp"
+[8411] EXECUTING: /usr/bin/c++ -o CMakeFiles/test.dir/test.cpp.o -c /home/xuwenchu/Documents/ResourceLeak/test/test.cpp
+[8412] CWD: /home/xuwenchu/Documents/ResourceLeak/build/test
+[8412] COMPILING: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/bin/cov-translate /usr/bin/c++ -o CMakeFiles/test.dir/test.cpp.o -c /home/xuwenchu/Documents/ResourceLeak/test/test.cpp
+Encountered compiler /usr/local/bin/g++ for the first time, configuring it
+* Configuring /usr/bin/c++ as a C++ compiler
+[STATUS] g++-config-0: Running sanity tests on native compiler
+[STATUS] g++-config-0: Detecting size and alignment of fundamental types.
+Looking for macros in standard headers. This can take a long time.
+|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-
+[STATUS] g++-config-0: Retrieving values for macros
+* Configuring /usr/bin/c++ as a C compiler
+[STATUS] g++cc-config-0: Running sanity tests on native compiler
+[STATUS] g++cc-config-0: Detecting size and alignment of fundamental types.
+Looking for macros in standard headers. This can take a long time.
+[STATUS] g++cc-config-0: Retrieving values for macros
+Added template compiler configuration instance /home/xuwenchu/Documents/ResourceLeak/emit/xuwenchu-ThinkPad-X1-Carbon-7th/config/8b0b914fbe02c557a8fcbf430083ddb6/coverity_config.xml
+Configuration read from: /home/xuwenchu/Documents/ResourceLeak/emit/xuwenchu-ThinkPad-X1-Carbon-7th/config/8b0b914fbe02c557a8fcbf430083ddb6/coverity_config.xml
+Node: coverity
+  Node: cit_version Value: 1
+  Node: config
+    Node: include Value: /home/xuwenchu/Documents/ResourceLeak/emit/xuwenchu-ThinkPad-X1-Carbon-7th/config/8b0b914fbe02c557a8fcbf430083ddb6/g++-config-0/coverity_config.xml
+    Node: include Value: /home/xuwenchu/Documents/ResourceLeak/emit/xuwenchu-ThinkPad-X1-Carbon-7th/config/8b0b914fbe02c557a8fcbf430083ddb6/g++cc-config-0/coverity_config.xml
+Configuration read from: /home/xuwenchu/Documents/ResourceLeak/emit/xuwenchu-ThinkPad-X1-Carbon-7th/config/8b0b914fbe02c557a8fcbf430083ddb6/g++-config-0/coverity_config.xml
+Node: coverity
+  Node: cit_version Value: 1
+  Node: config
+    Node: build
+      Node: compiler
+        Node: comp_name Value: c++
+        Node: comp_name Value: g++
+        Node: comp_dir Value: /usr/local/bin
+        Node: comp_translator Value: g++
+        Node: comp_lang Value: C/C++
+        Node: comp_front_end Value: cov-emit
+        Node: comp_desc Value: GNU C++ Compiler
+        Node: comp_cxx Value: true
+        Node: comp_next_type Value: g++cc
+        Node: comp_generic Value: gnu
+        Node: comp_require
+        Node: id Value: g++-c++-9.2.0-8b0b914fbe02c557a8fcbf430083ddb6-0
+        Node: version Value: 9.2.0
+        Node: is_compiler Value: true
+        Node: is_linker Value: true
+        Node: target_platform Value: all
+      Node: options
+        Node: id Value: g++-c++-9.2.0-8b0b914fbe02c557a8fcbf430083ddb6-0
+        Node: instrument_predicates
+          Node: remove_regex Value: (^|\s)\-Werror(=\S*)?(\s|$)
+          Node: if
+            Node: conditions
+              Node: or_cond
+                Node: cond
+                  Node: contains_regex Value: (^|\s)[^-]
+                Node: cond
+                  Node: contains_regex Value: (^|\s)\-l
+            Node: then
+              Node: insert
+                Node: insertion_string Value: -L[[:cov_lib_path:]] -Wl,-rpath=[[:cov_lib_deployment_path:]] [[:cov_lib_gcc:]] -I[[:cov_lib_header_path:]]
+                Node: precedes_regex Value: nothing
+        Node: instrument_variable
+          Node: var_name Value: cov_instrument_config_version
+          Node: cond_platform_value
+            Node: platform_name Value: all
+            Node: var_value Value: 3
+        Node: instrument_variable
+          Node: var_name Value: cov_lib_deployment_path
+          Node: cond_platform_value
+            Node: platform_name Value: all
+            Node: var_value Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/lib
+        Node: instrument_variable
+          Node: var_name Value: cov_lib_gcc
+          Node: cond_platform_value
+            Node: platform_name Value: all
+            Node: var_value Value: -lci-runtime -Wl,--no-as-needed -pthread -lpthread -lrt -lc
+          Node: cond_platform_value
+            Node: platform_name Value: mingw
+            Node: var_value Value: -lci-runtime-x86
+          Node: cond_platform_value
+            Node: platform_name Value: mingw64
+            Node: var_value Value: -lci-runtime-x64
+        Node: instrument_variable
+          Node: var_name Value: cov_lib_header_path
+          Node: cond_platform_value
+            Node: platform_name Value: all
+            Node: var_value Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/sdk/runtime/ta-runtime
+        Node: instrument_variable
+          Node: var_name Value: cov_lib_path
+          Node: cond_platform_value
+            Node: platform_name Value: all
+            Node: var_value Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/lib
+        Node: template_config_option_id Value: g++-c++-.*
+        Node: sysinclude_dir Value: /usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../include/c++/9.2.0
+        Node: sysinclude_dir Value: /usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../include/c++/9.2.0/x86_64-pc-linux-gnu
+        Node: sysinclude_dir Value: /usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../include/c++/9.2.0/backward
+        Node: sysinclude_dir Value: /usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/include
+        Node: sysinclude_dir Value: /usr/local/include
+        Node: sysinclude_dir Value: /usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/include-fixed
+        Node: sysinclude_dir Value: /usr/include/x86_64-linux-gnu
+        Node: sysinclude_dir Value: /usr/include
+        Node: dryrun_switch Value: -E
+        Node: dryrun_switch Value: -v
+        Node: dump_macros_arg Value: -dM
+        Node: dump_macros_arg Value: -E
+        Node: preprocess_remove_arg Value: -o.+
+        Node: preprocess_remove_arg Value: -c
+        Node: preprocess_remove_arg Value: -Werror
+        Node: preprocess_remove_next_arg Value: -o
+        Node: preprocess_switch Value: -xc++
+        Node: preprocess_switch Value: -E
+        Node: preprocess_switch Value: -U__BLOCKS__
+        Node: preprocess_compile_switch Value: -C
+        Node: supports_pch Value: true
+        Node: native_pch_suffix Value: .gch
+        Node: preprocess_output Value: -
+        Node: dryrun_output Value: 2
+        Node: pre_preinclude_file Value: /home/xuwenchu/Documents/ResourceLeak/emit/xuwenchu-ThinkPad-X1-Carbon-7th/config/8b0b914fbe02c557a8fcbf430083ddb6/g++-config-0/coverity-compiler-compat.h
+        Node: macro_pre_preinclude_file Value: /home/xuwenchu/Documents/ResourceLeak/emit/xuwenchu-ThinkPad-X1-Carbon-7th/config/8b0b914fbe02c557a8fcbf430083ddb6/g++-config-0/coverity-macro-compat.h
+        Node: prepend_arg Value: --add_type_modifier=__coverity___fpreg
+        Node: prepend_arg Value: --add_type_modifier=__coverity_decimal
+        Node: prepend_arg Value: --add_type_modifier=__coverity_float
+        Node: prepend_arg Value: --add_type_modifier=__coverity_floatx
+        Node: prepend_arg Value: --no_predefined_feature_test_macros
+        Node: prepend_arg Value: --no_stdarg_builtin
+        Node: prepend_arg Value: --no_predefined_cplusplus
+        Node: prepend_arg Value: -w
+        Node: prepend_arg Value: --no_predefines
+        Node: prepend_arg Value: --comp_ver
+        Node: prepend_arg Value: 9.2.0
+        Node: prepend_arg Value: --size_t_type=m
+        Node: prepend_arg Value: --ptrdiff_t_type=l
+        Node: prepend_arg Value: --type_sizes=w4xl8i4s2e16d8f4P8
+        Node: prepend_arg Value: --type_alignments=w4xl8i4s2e16d8f4P8
+        Node: prepend_arg Value: --char_bit_size=8
+        Node: prepend_arg Value: --gnu_carriage_return_line_terminator
+        Node: prepend_arg Value: --wchar_t_keyword
+        Node: prepend_arg Value: --no_multiline_string
+        Node: prepend_arg Value: --no_trigraphs
+        Node: prepend_arg Value: --ignore_calling_convention
+        Node: prepend_arg Value: --enable_80bit_float
+        Node: prepend_arg Value: --enable_128bit_float
+        Node: prepend_arg Value: --macro_stack_pragmas
+        Node: prepend_arg Value: --exceptions
+        Node: prepend_arg Value: --arg_dependent_overload
+        Node: prepend_arg Value: --inline_keyword
+        Node: prepend_arg Value: --has_include_macro
+        Node: prepend_arg Value: --has_include_next_macro
+        Node: prepend_arg Value: --has_cpp_attribute_macro
+        Node: prepend_arg Value: --no_predefines
+        Node: skip_arg Value: -###
+        Node: skip_arg Value: -E
+        Node: skip_arg Value: -fsyntax-only
+        Node: skip_arg Value: -M
+        Node: skip_arg Value: -MM
+        Node: skip_arg Value: -wrapper
+        Node: skip_arg Value: --version
+        Node: skip_file Value: conftest\.c{1,2}$
+        Node: skip_file Value: conftest\.cpp$
+        Node: opt_preinclude_file Value: /home/xuwenchu/Documents/ResourceLeak/emit/xuwenchu-ThinkPad-X1-Carbon-7th/config/8b0b914fbe02c557a8fcbf430083ddb6/g++-config-0/../user_nodefs.h
+        Node: trans
+          Node: options
+            Node: includes_from_env_var Value: CPLUS_INCLUDE_PATH
+            Node: pre_prepend_arg Value: --c++
+        Node: expand
+          Node: options
+            Node: replace_arg_regex
+              Node: replace Value: @(.*)
+              Node: with Value: --coverity_resp_file=$1
+        Node: pre_trans
+          Node: options
+            Node: intern_trans Value: gnu_pre_translate
+        Node: trans
+          Node: options
+            Node: includes_from_env_var Value: CPATH
+            Node: includes_from_env_var_empty_is_cwd Value: true
+        Node: begin_command_line_config
+  Node: md5 Value: 627691ee9f08f6a890721c673820b922
+Configuration read from: /home/xuwenchu/Documents/ResourceLeak/emit/xuwenchu-ThinkPad-X1-Carbon-7th/config/8b0b914fbe02c557a8fcbf430083ddb6/g++cc-config-0/coverity_config.xml
+Node: coverity
+  Node: cit_version Value: 1
+  Node: config
+    Node: build
+      Node: compiler
+        Node: comp_name Value: c++
+        Node: comp_name Value: g++
+        Node: comp_dir Value: /usr/local/bin
+        Node: comp_translator Value: g++cc
+        Node: comp_lang Value: C/C++
+        Node: comp_front_end Value: cov-emit
+        Node: comp_desc Value: GNU C++ Compiler
+        Node: comp_generic Value: gnu
+        Node: comp_require
+        Node: id Value: g++cc-c++-9.2.0-8b0b914fbe02c557a8fcbf430083ddb6-0
+        Node: version Value: 9.2.0
+        Node: is_compiler Value: true
+        Node: is_linker Value: true
+        Node: target_platform Value: all
+      Node: options
+        Node: id Value: g++cc-c++-9.2.0-8b0b914fbe02c557a8fcbf430083ddb6-0
+        Node: instrument_predicates
+          Node: remove_regex Value: (^|\s)\-Werror(=\S*)?(\s|$)
+          Node: if
+            Node: conditions
+              Node: or_cond
+                Node: cond
+                  Node: contains_regex Value: (^|\s)[^-]
+                Node: cond
+                  Node: contains_regex Value: (^|\s)\-l
+            Node: then
+              Node: insert
+                Node: insertion_string Value: -L[[:cov_lib_path:]] -Wl,-rpath=[[:cov_lib_deployment_path:]] [[:cov_lib_gcc:]] -I[[:cov_lib_header_path:]]
+                Node: precedes_regex Value: nothing
+        Node: instrument_variable
+          Node: var_name Value: cov_instrument_config_version
+          Node: cond_platform_value
+            Node: platform_name Value: all
+            Node: var_value Value: 3
+        Node: instrument_variable
+          Node: var_name Value: cov_lib_deployment_path
+          Node: cond_platform_value
+            Node: platform_name Value: all
+            Node: var_value Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/lib
+        Node: instrument_variable
+          Node: var_name Value: cov_lib_gcc
+          Node: cond_platform_value
+            Node: platform_name Value: all
+            Node: var_value Value: -lci-runtime -Wl,--no-as-needed -pthread -lpthread -lrt -lc
+          Node: cond_platform_value
+            Node: platform_name Value: mingw
+            Node: var_value Value: -lci-runtime-x86
+          Node: cond_platform_value
+            Node: platform_name Value: mingw64
+            Node: var_value Value: -lci-runtime-x64
+        Node: instrument_variable
+          Node: var_name Value: cov_lib_header_path
+          Node: cond_platform_value
+            Node: platform_name Value: all
+            Node: var_value Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/sdk/runtime/ta-runtime
+        Node: instrument_variable
+          Node: var_name Value: cov_lib_path
+          Node: cond_platform_value
+            Node: platform_name Value: all
+            Node: var_value Value: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/lib
+        Node: template_config_option_id Value: g++cc-c++-.*
+        Node: sysinclude_dir Value: /usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/include
+        Node: sysinclude_dir Value: /usr/local/include
+        Node: sysinclude_dir Value: /usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/include-fixed
+        Node: sysinclude_dir Value: /usr/include/x86_64-linux-gnu
+        Node: sysinclude_dir Value: /usr/include
+        Node: dryrun_switch Value: -xc
+        Node: dryrun_switch Value: -E
+        Node: dryrun_switch Value: -v
+        Node: dump_macros_arg Value: -xc
+        Node: dump_macros_arg Value: -dM
+        Node: dump_macros_arg Value: -E
+        Node: preprocess_remove_arg Value: -o.+
+        Node: preprocess_remove_arg Value: -c
+        Node: preprocess_remove_arg Value: -Werror
+        Node: preprocess_remove_next_arg Value: -o
+        Node: preprocess_switch Value: -E
+        Node: preprocess_switch Value: -U__BLOCKS__
+        Node: preprocess_switch Value: -xc
+        Node: preprocess_compile_switch Value: -C
+        Node: supports_pch Value: true
+        Node: native_pch_suffix Value: .gch
+        Node: preprocess_output Value: -
+        Node: dryrun_output Value: 2
+        Node: pre_preinclude_file Value: /home/xuwenchu/Documents/ResourceLeak/emit/xuwenchu-ThinkPad-X1-Carbon-7th/config/8b0b914fbe02c557a8fcbf430083ddb6/g++cc-config-0/coverity-compiler-compat.h
+        Node: macro_pre_preinclude_file Value: /home/xuwenchu/Documents/ResourceLeak/emit/xuwenchu-ThinkPad-X1-Carbon-7th/config/8b0b914fbe02c557a8fcbf430083ddb6/g++cc-config-0/coverity-macro-compat.h
+        Node: prepend_arg Value: --add_type_modifier=__coverity___fpreg
+        Node: prepend_arg Value: --add_type_modifier=__coverity_decimal
+        Node: prepend_arg Value: --add_type_modifier=__coverity_float
+        Node: prepend_arg Value: --add_type_modifier=__coverity_floatx
+        Node: prepend_arg Value: --no_predefined_feature_test_macros
+        Node: prepend_arg Value: --no_stdarg_builtin
+        Node: prepend_arg Value: --no_predefined_cplusplus
+        Node: prepend_arg Value: -w
+        Node: prepend_arg Value: --no_predefines
+        Node: prepend_arg Value: --comp_ver
+        Node: prepend_arg Value: 9.2.0
+        Node: prepend_arg Value: --size_t_type=m
+        Node: prepend_arg Value: --ptrdiff_t_type=l
+        Node: prepend_arg Value: --type_sizes=xl8i4s2e16d8f4P8
+        Node: prepend_arg Value: --type_alignments=xl8i4s2e16d8f4P8
+        Node: prepend_arg Value: --char_bit_size=8
+        Node: prepend_arg Value: --restrict
+        Node: prepend_arg Value: --gnu_carriage_return_line_terminator
+        Node: prepend_arg Value: --wchar_t_type=i
+        Node: prepend_arg Value: --no_multiline_string
+        Node: prepend_arg Value: --no_trigraphs
+        Node: prepend_arg Value: --ignore_calling_convention
+        Node: prepend_arg Value: --c11
+        Node: prepend_arg Value: --enable_80bit_float
+        Node: prepend_arg Value: --enable_128bit_float
+        Node: prepend_arg Value: --allow__bool
+        Node: prepend_arg Value: --macro_stack_pragmas
+        Node: prepend_arg Value: --inline_keyword
+        Node: prepend_arg Value: --has_include_macro
+        Node: prepend_arg Value: --has_include_next_macro
+        Node: prepend_arg Value: --has_cpp_attribute_macro
+        Node: prepend_arg Value: --no_predefines
+        Node: skip_arg Value: -###
+        Node: skip_arg Value: -E
+        Node: skip_arg Value: -fsyntax-only
+        Node: skip_arg Value: -M
+        Node: skip_arg Value: -MM
+        Node: skip_arg Value: -wrapper
+        Node: skip_arg Value: --version
+        Node: skip_file Value: conftest\.c{1,2}$
+        Node: skip_file Value: conftest\.cpp$
+        Node: opt_preinclude_file Value: /home/xuwenchu/Documents/ResourceLeak/emit/xuwenchu-ThinkPad-X1-Carbon-7th/config/8b0b914fbe02c557a8fcbf430083ddb6/g++cc-config-0/../user_nodefs.h
+        Node: pre_trans
+          Node: options
+            Node: pre_prepend_arg Value: -coverity_cxx_suffixes=c;i
+            Node: pre_prepend_arg Value: -coverity_cxx_header_suffixes=h
+        Node: expand
+          Node: options
+            Node: replace_arg_regex
+              Node: replace Value: @(.*)
+              Node: with Value: --coverity_resp_file=$1
+        Node: pre_trans
+          Node: options
+            Node: intern_trans Value: gnu_pre_translate
+        Node: trans
+          Node: options
+            Node: includes_from_env_var Value: CPATH
+            Node: includes_from_env_var_empty_is_cwd Value: true
+        Node: trans
+          Node: options
+            Node: includes_from_env_var Value: C_INCLUDE_PATH
+            Node: pre_prepend_arg Value: --c
+        Node: begin_command_line_config
+  Node: md5 Value: 9a6fe6e69cc8600d75b4afa4a59710e8
+COV_TRANSLATE EXPANDED ARGS: "-o" "CMakeFiles/test.dir/test.cpp.o" "-c" "/home/xuwenchu/Documents/ResourceLeak/test/test.cpp"
+[STATUS] Compiling ../../test/test.cpp
+/home/xuwenchu/Documents/cov-analysis-linux64-2019.03/bin/cov-emit --dir=/home/xuwenchu/Documents/ResourceLeak --ignore_path=/tmp/cov-xuwenchu/7eaad64a2afb7335a0290d2668b3dab2/cov-configure --ignore_path=/tmp/cov-xuwenchu/7eaad64a2afb7335a0290d2668b3dab2/cov-xuwenchu/49d2810c60c8bb3a85a28d57ae799a2d --pre_preinclude /home/xuwenchu/Documents/ResourceLeak/emit/xuwenchu-ThinkPad-X1-Carbon-7th/config/8b0b914fbe02c557a8fcbf430083ddb6/g++-config-0/coverity-macro-compat.h --pre_preinclude /home/xuwenchu/Documents/ResourceLeak/emit/xuwenchu-ThinkPad-X1-Carbon-7th/config/8b0b914fbe02c557a8fcbf430083ddb6/g++-config-0/coverity-compiler-compat.h --add_type_modifier=__coverity___fpreg --add_type_modifier=__coverity_decimal --add_type_modifier=__coverity_float --add_type_modifier=__coverity_floatx --no_predefined_feature_test_macros --no_stdarg_builtin --no_predefined_cplusplus -w --no_predefines --comp_ver 9.2.0 --char_bit_size=8 --gnu_carriage_return_line_terminator --wchar_t_keyword --no_multiline_string --no_trigraphs --ignore_calling_convention --enable_80bit_float --enable_128bit_float --macro_stack_pragmas --exceptions --arg_dependent_overload --inline_keyword --has_include_macro --has_include_next_macro --has_cpp_attribute_macro --no_predefines --c++ --no_macro_preempts_udl_suffix --builtin_emulation --allow_incompat_throw --new_array_args --type_traits_helpers --c++14 --gnu_version 90200 --no_trigraphs --sys_include /usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../include/c++/9.2.0 --sys_include /usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../include/c++/9.2.0/x86_64-pc-linux-gnu --sys_include /usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../include/c++/9.2.0/backward --sys_include /usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/include --sys_include /usr/local/include --sys_include /usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/include-fixed --sys_include /usr/include/x86_64-linux-gnu --sys_include /usr/include -D__NO_INLINE__ --type_sizes=e16Pdlx8fiw4s2 --type_alignments=e16Pdlx8fiw4s2 --size_t_type=m --ptrdiff_t_type=l ../../test/test.cpp 
+"/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../include/c++/9.2.0/bit
+          s/stl_function.h", line 437: warning #20: identifier
+          "__builtin_is_constant_evaluated" is undefined
+  	if (__builtin_is_constant_evaluated())
+  	    ^
+
+"/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../include/c++/9.2.0/bit
+          s/stl_function.h", line 433: warning #1563: function "std::less<_Tp
+          *>::operator()" not emitted, consider modeling it or review parse
+          diagnostics to improve fidelity
+        operator()(_Tp* __x, _Tp* __y) const _GLIBCXX_NOTHROW
+        ^
+
+Emit for file '/home/xuwenchu/Documents/ResourceLeak/test/test.cpp' complete.
+[WARNING] 2 recoverable errors detected in the compilation of "../../test/test.cpp".
+[9021] EXECUTING: /usr/local/libexec/gcc/x86_64-pc-linux-gnu/9.2.0/cc1plus -quiet -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /home/xuwenchu/Documents/ResourceLeak/test/test.cpp -quiet -dumpbase test.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/test.dir/test.cpp.o -o /tmp/ccyc67kA.s
+[9023] EXECUTING: /bin/sh -c "/usr/local/bin/cmake -E cmake_echo_color --switch= --green --bold --progress-dir=/home/xuwenchu/Documents/ResourceLeak/build/CMakeFiles --progress-num=2 "Linking CXX static library libtest.a""
+[9024] EXECUTING: /usr/local/bin/cmake -E cmake_echo_color --switch= --green --bold --progress-dir=/home/xuwenchu/Documents/ResourceLeak/build/CMakeFiles --progress-num=2 "Linking CXX static library libtest.a"
+[9025] EXECUTING: /bin/sh -c "cd /home/xuwenchu/Documents/ResourceLeak/build/test && /usr/local/bin/cmake -P CMakeFiles/test.dir/cmake_clean_target.cmake"
+[9026] EXECUTING: /usr/local/bin/cmake -P CMakeFiles/test.dir/cmake_clean_target.cmake
+[9027] EXECUTING: /bin/sh -c "cd /home/xuwenchu/Documents/ResourceLeak/build/test && /usr/local/bin/cmake -E cmake_link_script CMakeFiles/test.dir/link.txt --verbose="
+[9028] EXECUTING: /usr/local/bin/cmake -E cmake_link_script CMakeFiles/test.dir/link.txt --verbose=
+[9029] EXECUTING: /usr/bin/ar qc libtest.a CMakeFiles/test.dir/test.cpp.o
+[9030] EXECUTING: /usr/bin/ranlib libtest.a
+[9031] EXECUTING: /bin/sh -c "/usr/local/bin/cmake -E cmake_echo_color --switch= --progress-dir=/home/xuwenchu/Documents/ResourceLeak/build/CMakeFiles --progress-num=1,2 "Built target test""
+[9032] EXECUTING: /usr/local/bin/cmake -E cmake_echo_color --switch= --progress-dir=/home/xuwenchu/Documents/ResourceLeak/build/CMakeFiles --progress-num=1,2 "Built target test"
+[9033] EXECUTING: /usr/local/bin/cmake -E cmake_progress_start /home/xuwenchu/Documents/ResourceLeak/build/CMakeFiles 0
+2021-01-08T10:44:15.232643Z|cov-build|8397|info|> Invoking cov-security-da with commands: /home/xuwenchu/Documents/cov-analysis-linux64-2019.03/bin/cov-security-da --dir /home/xuwenchu/Documents/ResourceLeak
+2021-01-08T10:44:15.269464Z|cov-build|8397|info|> 
+2021-01-08T10:44:15.269464Z|cov-build|8397|info|> Build time (cov-build overall): 00:00:04.209273
+2021-01-08T10:44:15.269464Z|cov-build|8397|info|> 
+2021-01-08T10:44:15.269912Z|cov-build|8397|info|> Build time (C/C++ emits total): 00:00:03.823303
+2021-01-08T10:44:15.269912Z|cov-build|8397|info|> 
+2021-01-08T10:44:15.269912Z|cov-build|8397|info|> 
+2021-01-08T10:44:15.269940Z|cov-build|8397|info|> Emitted 1 C/C++ compilation units (100%) successfully
+2021-01-08T10:44:15.269940Z|cov-build|8397|info|> [WARNING] Recoverable errors were encountered during 1 of these C/C++ compilation units.
+2021-01-08T10:44:15.269940Z|cov-build|8397|info|> 
+2021-01-08T10:44:15.269940Z|cov-build|8397|info|> 1 C/C++ compilation units (100%) are ready for analysis
+2021-01-08T10:44:15.269940Z|cov-build|8397|info|>  For more details, please look at: 
+2021-01-08T10:44:15.269940Z|cov-build|8397|info|>     /home/xuwenchu/Documents/ResourceLeak/build-log.txt

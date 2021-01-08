@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE coverity SYSTEM "config.dtd">
+<coverity>
+
+<metrics>
+    <metric>
+        <name>time</name>
+        <value>4</value>
+    </metric>
+    <metric>
+        <name>args</name>
+        <value>/home/xuwenchu/Documents/cov-analysis-linux64-2019.03/bin/cov-build --dir .. make -j 4</value>
+    </metric>
+    <metric>
+        <name>host</name>
+        <value>xuwenchu-ThinkPad-X1-Carbon-7th</value>
+    </metric>
+    <metric>
+        <name>short-platform</name>
+        <value>linux64</value>
+    </metric>
+    <metric>
+        <name>platform</name>
+        <value>Linux 4.15.0-128-generic x86_64</value>
+    </metric>
+    <metric>
+        <name>ident</name>
+        <value>2019.03 (build 2c0f9c8cf4 p-pacific1-push-35439.872)</value>
+    </metric>
+    <metric>
+        <name>user</name>
+        <value>xuwenchu</value>
+    </metric>
+    <metric>
+        <name>cwd</name>
+        <value>/home/xuwenchu/Documents/ResourceLeak/build</value>
+    </metric>
+    <metric>
+        <name>config</name>
+        <value>/home/xuwenchu/Documents/cov-analysis-linux64-2019.03/config/coverity_config.xml</value>
+    </metric>
+    <metric>
+        <name>intermediatedir</name>
+        <value>/home/xuwenchu/Documents/ResourceLeak</value>
+    </metric>
+    <metric>
+        <name>outputdir</name>
+        <value>/home/xuwenchu/Documents/ResourceLeak/output</value>
+    </metric>
+    <metric>
+        <name>emitdir</name>
+        <value>/home/xuwenchu/Documents/ResourceLeak/emit</value>
+    </metric>
+    <metric>
+        <name>force</name>
+        <value>no</value>
+    </metric>
+    <metric>
+        <name>cygwin</name>
+        <value>no</value>
+    </metric>
+    <metric>
+        <name>failures</name>
+        <value>0</value>
+    </metric>
+    <metric>
+        <name>successes</name>
+        <value>1</value>
+    </metric>
+    <metric>
+        <name>recoverable-errors</name>
+        <value>1</value>
+    </metric>
+    <metric>
+        <name>dotnet-webapps-detected</name>
+        <value>0</value>
+    </metric>
+    <metric>
+        <name>dotnet-webapp-successes</name>
+        <value>0</value>
+    </metric>
+    <metric>
+        <name>dotnet-webapp-compilation-secs</name>
+        <value>0</value>
+    </metric>
+    <metric>
+        <name>buildcmd</name>
+        <value>make -j 4</value>
+    </metric>
+</metrics>
+</coverity>
